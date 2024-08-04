@@ -12,7 +12,6 @@ struct BasicApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            ShapeBasic()
         }
     }
 }
