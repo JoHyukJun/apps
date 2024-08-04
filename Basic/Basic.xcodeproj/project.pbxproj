@@ -13,6 +13,7 @@
 		6262B43A2C5E0A1200D4FDED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6262B4392C5E0A1200D4FDED /* Preview Assets.xcassets */; };
 		6262B4422C5E0A4E00D4FDED /* TextBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262B4412C5E0A4E00D4FDED /* TextBasic.swift */; };
 		6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E3852C5F3A9700855C54 /* ShapeBasic.swift */; };
+		6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E3872C5F3EF800855C54 /* ColorBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6262B43B2C5E0A1200D4FDED /* Basic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Basic.entitlements; sourceTree = "<group>"; };
 		6262B4412C5E0A4E00D4FDED /* TextBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBasic.swift; sourceTree = "<group>"; };
 		6262E3852C5F3A9700855C54 /* ShapeBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeBasic.swift; path = basic/ShapeBasic.swift; sourceTree = SOURCE_ROOT; };
+		6262E3872C5F3EF800855C54 /* ColorBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorBasic.swift; path = basic/ColorBasic.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6262B4322C5E0A1100D4FDED /* BasicApp.swift */,
 				6262B4412C5E0A4E00D4FDED /* TextBasic.swift */,
 				6262E3852C5F3A9700855C54 /* ShapeBasic.swift */,
+				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
 				6262B4342C5E0A1100D4FDED /* ContentView.swift */,
 				6262B4362C5E0A1200D4FDED /* Assets.xcassets */,
 				6262B43B2C5E0A1200D4FDED /* Basic.entitlements */,
@@ -148,6 +151,7 @@
 				6262B4422C5E0A4E00D4FDED /* TextBasic.swift in Sources */,
 				6262B4352C5E0A1100D4FDED /* ContentView.swift in Sources */,
 				6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */,
+				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
 				6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
