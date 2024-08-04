@@ -22,12 +22,6 @@ struct IconBasic: View {
                 .scaledToFit()
                 .foregroundColor(Color.blue)
                 .frame(width: 200, height: 100, alignment: .center)
-            
-            Image(systemName: "square.and.arrow.up.trianglebadge.exclamationmark.fill")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(Color.blue)
-                .frame(width: 200, height: 100, alignment: .center)
         }
     }
 }
