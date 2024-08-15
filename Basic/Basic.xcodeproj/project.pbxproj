@@ -19,6 +19,11 @@
 		6262E38E2C5F693400855C54 /* ImageBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E38D2C5F693400855C54 /* ImageBasic.swift */; };
 		6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */; };
 		6262E3922C5F906D00855C54 /* BackgroundBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E3912C5F906D00855C54 /* BackgroundBasic.swift */; };
+		627838782C6DB29000D09F01 /* StackBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627838772C6DB29000D09F01 /* StackBasic.swift */; };
+		6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627838792C6DB6F700D09F01 /* PaddingBasic.swift */; };
+		6278387C2C6DCB9C00D09F01 /* SpacerBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */; };
+		6278387E2C6DCE1C00D09F01 /* ScrollViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */; };
+		627838802C6DFFCB00D09F01 /* InitEnumBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		6262E38D2C5F693400855C54 /* ImageBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageBasic.swift; path = basic/ImageBasic.swift; sourceTree = SOURCE_ROOT; };
 		6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrameBasic.swift; path = basic/FrameBasic.swift; sourceTree = SOURCE_ROOT; };
 		6262E3912C5F906D00855C54 /* BackgroundBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundBasic.swift; path = basic/BackgroundBasic.swift; sourceTree = SOURCE_ROOT; };
+		627838772C6DB29000D09F01 /* StackBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StackBasic.swift; path = basic/StackBasic.swift; sourceTree = SOURCE_ROOT; };
+		627838792C6DB6F700D09F01 /* PaddingBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddingBasic.swift; path = basic/PaddingBasic.swift; sourceTree = SOURCE_ROOT; };
+		6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpacerBasic.swift; path = basic/SpacerBasic.swift; sourceTree = SOURCE_ROOT; };
+		6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollViewBasic.swift; path = basic/ScrollViewBasic.swift; sourceTree = SOURCE_ROOT; };
+		6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitEnumBasic.swift; path = basic/InitEnumBasic.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +83,13 @@
 				6262E3852C5F3A9700855C54 /* ShapeBasic.swift */,
 				6262E3892C5F555A00855C54 /* GradientBasic.swift */,
 				6262E38B2C5F57C700855C54 /* IconBasic.swift */,
+				6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */,
 				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
 				6262E3912C5F906D00855C54 /* BackgroundBasic.swift */,
+				627838772C6DB29000D09F01 /* StackBasic.swift */,
+				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
+				6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */,
+				6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */,
 				6262E38D2C5F693400855C54 /* ImageBasic.swift */,
 				6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */,
 				6262B4342C5E0A1100D4FDED /* ContentView.swift */,
@@ -163,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627838802C6DFFCB00D09F01 /* InitEnumBasic.swift in Sources */,
 				6262E38E2C5F693400855C54 /* ImageBasic.swift in Sources */,
 				6262E38A2C5F555A00855C54 /* GradientBasic.swift in Sources */,
 				6262E38C2C5F57C700855C54 /* IconBasic.swift in Sources */,
@@ -172,7 +188,11 @@
 				6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */,
 				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
 				6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */,
+				6278387C2C6DCB9C00D09F01 /* SpacerBasic.swift in Sources */,
+				6278387E2C6DCE1C00D09F01 /* ScrollViewBasic.swift in Sources */,
 				6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */,
+				6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */,
+				627838782C6DB29000D09F01 /* StackBasic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
