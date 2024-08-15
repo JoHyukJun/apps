@@ -20,6 +20,7 @@
 		6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */; };
 		6262E3922C5F906D00855C54 /* BackgroundBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262E3912C5F906D00855C54 /* BackgroundBasic.swift */; };
 		627838782C6DB29000D09F01 /* StackBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627838772C6DB29000D09F01 /* StackBasic.swift */; };
+		6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627838792C6DB6F700D09F01 /* PaddingBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrameBasic.swift; path = basic/FrameBasic.swift; sourceTree = SOURCE_ROOT; };
 		6262E3912C5F906D00855C54 /* BackgroundBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundBasic.swift; path = basic/BackgroundBasic.swift; sourceTree = SOURCE_ROOT; };
 		627838772C6DB29000D09F01 /* StackBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StackBasic.swift; path = basic/StackBasic.swift; sourceTree = SOURCE_ROOT; };
+		627838792C6DB6F700D09F01 /* PaddingBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddingBasic.swift; path = basic/PaddingBasic.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
 				6262E3912C5F906D00855C54 /* BackgroundBasic.swift */,
 				627838772C6DB29000D09F01 /* StackBasic.swift */,
+				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
 				6262E38D2C5F693400855C54 /* ImageBasic.swift */,
 				6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */,
 				6262B4342C5E0A1100D4FDED /* ContentView.swift */,
@@ -176,6 +179,7 @@
 				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
 				6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */,
 				6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */,
+				6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */,
 				627838782C6DB29000D09F01 /* StackBasic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
