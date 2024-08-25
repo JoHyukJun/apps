@@ -28,6 +28,7 @@
 		629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768152C79CEE00043824B /* LazyGridBasic.swift */; };
 		629768182C79F21A0043824B /* IgnoreSafeAreaBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */; };
 		6297681A2C79F35A0043824B /* ButtonBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768192C79F35A0043824B /* ButtonBasic.swift */; };
+		6297681C2C7ACE620043824B /* StateBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297681B2C7ACE620043824B /* StateBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		629768152C79CEE00043824B /* LazyGridBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyGridBasic.swift; path = basic/LazyGridBasic.swift; sourceTree = SOURCE_ROOT; };
 		629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IgnoreSafeAreaBasic.swift; path = basic/IgnoreSafeAreaBasic.swift; sourceTree = SOURCE_ROOT; };
 		629768192C79F35A0043824B /* ButtonBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonBasic.swift; path = basic/ButtonBasic.swift; sourceTree = SOURCE_ROOT; };
+		6297681B2C7ACE620043824B /* StateBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateBasic.swift; path = basic/StateBasic.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				629768192C79F35A0043824B /* ButtonBasic.swift */,
 				629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */,
 				629768152C79CEE00043824B /* LazyGridBasic.swift */,
+				6297681B2C7ACE620043824B /* StateBasic.swift */,
 				627838772C6DB29000D09F01 /* StackBasic.swift */,
 				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
 				6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */,
@@ -208,6 +211,7 @@
 				6278387E2C6DCE1C00D09F01 /* ScrollViewBasic.swift in Sources */,
 				6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */,
 				6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */,
+				6297681C2C7ACE620043824B /* StateBasic.swift in Sources */,
 				627838782C6DB29000D09F01 /* StackBasic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
