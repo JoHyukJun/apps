@@ -25,6 +25,15 @@
 		6278387E2C6DCE1C00D09F01 /* ScrollViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */; };
 		627838802C6DFFCB00D09F01 /* InitEnumBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */; };
 		629768142C79CD8F0043824B /* ForEachLoopBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768132C79CD8F0043824B /* ForEachLoopBasic.swift */; };
+		629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768152C79CEE00043824B /* LazyGridBasic.swift */; };
+		629768182C79F21A0043824B /* IgnoreSafeAreaBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */; };
+		6297681A2C79F35A0043824B /* ButtonBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768192C79F35A0043824B /* ButtonBasic.swift */; };
+		6297681C2C7ACE620043824B /* StateBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297681B2C7ACE620043824B /* StateBasic.swift */; };
+		6297681E2C7AD0290043824B /* ExtractViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297681D2C7AD0290043824B /* ExtractViewBasic.swift */; };
+		629768202C7AD1570043824B /* ExtractSubViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */; };
+		629768232C7AD1810043824B /* ItemBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768222C7AD1810043824B /* ItemBasic.swift */; };
+		629768252C7B18600043824B /* BindingBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768242C7B18600043824B /* BindingBasic.swift */; };
+		629768272C7B18740043824B /* BindingChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629768262C7B18740043824B /* BindingChild.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +57,15 @@
 		6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScrollViewBasic.swift; path = basic/ScrollViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitEnumBasic.swift; path = basic/InitEnumBasic.swift; sourceTree = SOURCE_ROOT; };
 		629768132C79CD8F0043824B /* ForEachLoopBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForEachLoopBasic.swift; path = basic/ForEachLoopBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768152C79CEE00043824B /* LazyGridBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyGridBasic.swift; path = basic/LazyGridBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IgnoreSafeAreaBasic.swift; path = basic/IgnoreSafeAreaBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768192C79F35A0043824B /* ButtonBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonBasic.swift; path = basic/ButtonBasic.swift; sourceTree = SOURCE_ROOT; };
+		6297681B2C7ACE620043824B /* StateBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateBasic.swift; path = basic/StateBasic.swift; sourceTree = SOURCE_ROOT; };
+		6297681D2C7AD0290043824B /* ExtractViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtractViewBasic.swift; path = basic/ExtractViewBasic.swift; sourceTree = SOURCE_ROOT; };
+		6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtractSubViewBasic.swift; path = basic/ExtractSubViewBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768222C7AD1810043824B /* ItemBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemBasic.swift; path = basic/Component/ItemBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768242C7B18600043824B /* BindingBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BindingBasic.swift; path = basic/BindingBasic.swift; sourceTree = SOURCE_ROOT; };
+		629768262C7B18740043824B /* BindingChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BindingChild.swift; path = basic/Component/BindingChild.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +107,15 @@
 				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
 				629768132C79CD8F0043824B /* ForEachLoopBasic.swift */,
 				6262E3912C5F906D00855C54 /* BackgroundBasic.swift */,
+				629768192C79F35A0043824B /* ButtonBasic.swift */,
+				629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */,
+				629768152C79CEE00043824B /* LazyGridBasic.swift */,
+				6297681B2C7ACE620043824B /* StateBasic.swift */,
+				6297681D2C7AD0290043824B /* ExtractViewBasic.swift */,
 				627838772C6DB29000D09F01 /* StackBasic.swift */,
+				629768242C7B18600043824B /* BindingBasic.swift */,
+				6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */,
+				629768212C7AD1690043824B /* Component */,
 				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
 				6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */,
 				6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */,
@@ -109,6 +135,15 @@
 				6262B4392C5E0A1200D4FDED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		629768212C7AD1690043824B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				629768222C7AD1810043824B /* ItemBasic.swift */,
+				629768262C7B18740043824B /* BindingChild.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,19 +218,28 @@
 			files = (
 				627838802C6DFFCB00D09F01 /* InitEnumBasic.swift in Sources */,
 				6262E38E2C5F693400855C54 /* ImageBasic.swift in Sources */,
+				629768252C7B18600043824B /* BindingBasic.swift in Sources */,
+				629768202C7AD1570043824B /* ExtractSubViewBasic.swift in Sources */,
+				629768232C7AD1810043824B /* ItemBasic.swift in Sources */,
 				6262E38A2C5F555A00855C54 /* GradientBasic.swift in Sources */,
+				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
+				629768272C7B18740043824B /* BindingChild.swift in Sources */,
 				6262E38C2C5F57C700855C54 /* IconBasic.swift in Sources */,
 				6262B4422C5E0A4E00D4FDED /* TextBasic.swift in Sources */,
+				6297681A2C79F35A0043824B /* ButtonBasic.swift in Sources */,
 				629768142C79CD8F0043824B /* ForEachLoopBasic.swift in Sources */,
 				6262E3922C5F906D00855C54 /* BackgroundBasic.swift in Sources */,
 				6262B4352C5E0A1100D4FDED /* ContentView.swift in Sources */,
 				6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */,
+				629768182C79F21A0043824B /* IgnoreSafeAreaBasic.swift in Sources */,
 				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
 				6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */,
+				6297681E2C7AD0290043824B /* ExtractViewBasic.swift in Sources */,
 				6278387C2C6DCB9C00D09F01 /* SpacerBasic.swift in Sources */,
 				6278387E2C6DCE1C00D09F01 /* ScrollViewBasic.swift in Sources */,
 				6262E3902C5F6ACF00855C54 /* FrameBasic.swift in Sources */,
 				6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */,
+				6297681C2C7ACE620043824B /* StateBasic.swift in Sources */,
 				627838782C6DB29000D09F01 /* StackBasic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
