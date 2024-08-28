@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620A1D9B2C7F30A70056CCE2 /* AnimationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A1D9A2C7F30A70056CCE2 /* AnimationBasic.swift */; };
 		6212D71C2C7DE42500B5FF34 /* ConditionalBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */; };
 		6212D71E2C7DE68F00B5FF34 /* TernaryBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */; };
 		6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6262B4322C5E0A1100D4FDED /* BasicApp.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620A1D9A2C7F30A70056CCE2 /* AnimationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimationBasic.swift; path = basic/AnimationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConditionalBasic.swift; path = basic/ConditionalBasic.swift; sourceTree = SOURCE_ROOT; };
 		6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TernaryBasic.swift; path = basic/TernaryBasic.swift; sourceTree = SOURCE_ROOT; };
 		6262B42F2C5E0A1100D4FDED /* Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				6297681D2C7AD0290043824B /* ExtractViewBasic.swift */,
 				6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */,
 				6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */,
+				620A1D9A2C7F30A70056CCE2 /* AnimationBasic.swift */,
 				627838772C6DB29000D09F01 /* StackBasic.swift */,
 				629768242C7B18600043824B /* BindingBasic.swift */,
 				6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */,
@@ -239,6 +242,7 @@
 				6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */,
 				6212D71E2C7DE68F00B5FF34 /* TernaryBasic.swift in Sources */,
 				629768182C79F21A0043824B /* IgnoreSafeAreaBasic.swift in Sources */,
+				620A1D9B2C7F30A70056CCE2 /* AnimationBasic.swift in Sources */,
 				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
 				6262B4332C5E0A1100D4FDED /* BasicApp.swift in Sources */,
 				6297681E2C7AD0290043824B /* ExtractViewBasic.swift in Sources */,
