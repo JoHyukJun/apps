@@ -4,6 +4,8 @@
 //
 //  Created by johyukjun on 9/21/24.
 //
+//  Can't use in mac os
+//
 
 import SwiftUI
 
@@ -43,33 +45,33 @@ struct ActionSheetBasic: View {
             
             Spacer()
         } // VStack
-        .actionSheet(isPresented: $showActionSheet) {
-            // actionSheet type
-            getActionSheet()
-        }
+//        .actionSheet(isPresented: $showActionSheet) {
+//            // actionSheet type
+//            getActionSheet()
+//        }
     }
     
     // function
-    func getActionSheet() -> ActionSheet {
-        let shareButton: ActionSheet.Button = .default(Text("share")) {
-            // action
-            resultActionSheet = "shared done"
-        }
-        
-        let reportButton: ActionSheet.Button = .default(Text("report")) {
-            // action
-            resultActionSheet = "reported done"
-        }
-        
-        let deleteButton: ActionSheet.Button = .default(Text("delete")) {
-            // action
-            resultActionSheet = "delete done"
-        }
-        
-        let cancleButton: ActionSheet.Button = .cancel()
-        
-        return ActionSheet(title: Text("action sheet title"), message: Text("action sheet message"), buttons: [shareButton, reportButton, deleteButton, cancleButton])
-    }
+//    func getActionSheet() -> ActionSheet {
+//        let shareButton: ActionSheet.Button = .default(Text("share")) {
+//            // action
+//            resultActionSheet = "shared done"
+//        }
+//        
+//        let reportButton: ActionSheet.Button = .default(Text("report")) {
+//            // action
+//            resultActionSheet = "reported done"
+//        }
+//        
+//        let deleteButton: ActionSheet.Button = .default(Text("delete")) {
+//            // action
+//            resultActionSheet = "delete done"
+//        }
+//        
+//        let cancleButton: ActionSheet.Button = .cancel()
+//        
+//        return ActionSheet(title: Text("action sheet title"), message: Text("action sheet message"), buttons: [shareButton, reportButton, deleteButton, cancleButton])
+//    }
 }
 
 #Preview {
