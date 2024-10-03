@@ -52,6 +52,7 @@
 		62E72F7F2CAE87D10010C4EA /* ColorPickerBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E72F7E2CAE87D10010C4EA /* ColorPickerBasic.swift */; };
 		62E72F812CAE88F00010C4EA /* DatePickerBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E72F802CAE88F00010C4EA /* DatePickerBasic.swift */; };
 		62E72F832CAEC2A70010C4EA /* StepperBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E72F822CAEC2A70010C4EA /* StepperBasic.swift */; };
+		62E72F852CAED3480010C4EA /* SliderBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E72F842CAED3480010C4EA /* SliderBasic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		62E72F7E2CAE87D10010C4EA /* ColorPickerBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerBasic.swift; sourceTree = "<group>"; };
 		62E72F802CAE88F00010C4EA /* DatePickerBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatePickerBasic.swift; path = basic/DatePickerBasic.swift; sourceTree = SOURCE_ROOT; };
 		62E72F822CAEC2A70010C4EA /* StepperBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperBasic.swift; sourceTree = "<group>"; };
+		62E72F842CAED3480010C4EA /* SliderBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SliderBasic.swift; path = basic/SliderBasic.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				62E72F7E2CAE87D10010C4EA /* ColorPickerBasic.swift */,
 				62E72F802CAE88F00010C4EA /* DatePickerBasic.swift */,
 				62E72F822CAEC2A70010C4EA /* StepperBasic.swift */,
+				62E72F842CAED3480010C4EA /* SliderBasic.swift */,
 				6294B93C2C8D851600E6CE50 /* AlertBasic.swift */,
 				6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */,
 				6294B93E2C8D933700E6CE50 /* ContextMenuBasic.swift */,
@@ -283,6 +286,7 @@
 				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
 				6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */,
 				62E72F832CAEC2A70010C4EA /* StepperBasic.swift in Sources */,
+				62E72F852CAED3480010C4EA /* SliderBasic.swift in Sources */,
 				629768272C7B18740043824B /* BindingChild.swift in Sources */,
 				6282665E2C9EBDEE0004A051 /* ActionSheetBasic.swift in Sources */,
 				62E72F812CAE88F00010C4EA /* DatePickerBasic.swift in Sources */,
