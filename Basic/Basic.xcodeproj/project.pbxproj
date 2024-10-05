@@ -57,6 +57,7 @@
 		62F5464A2CB0CAE8000DA7DE /* DarkModeBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F546492CB0CAE8000DA7DE /* DarkModeBasic.swift */; };
 		62F5464C2CB0CCE2000DA7DE /* OnAppearBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5464B2CB0CCE2000DA7DE /* OnAppearBasic.swift */; };
 		62F5464E2CB0CEC0000DA7DE /* OnTabGestureBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F5464D2CB0CEC0000DA7DE /* OnTabGestureBasic.swift */; };
+		62F546502CB0D0CA000DA7DE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F5464F2CB0D0CA000DA7DE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		62F546492CB0CAE8000DA7DE /* DarkModeBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeBasic.swift; sourceTree = "<group>"; };
 		62F5464B2CB0CCE2000DA7DE /* OnAppearBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnAppearBasic.swift; path = basic/OnAppearBasic.swift; sourceTree = SOURCE_ROOT; };
 		62F5464D2CB0CEC0000DA7DE /* OnTabGestureBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnTabGestureBasic.swift; path = basic/OnTabGestureBasic.swift; sourceTree = SOURCE_ROOT; };
+		62F5464F2CB0D0CA000DA7DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = basic/README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				62F546492CB0CAE8000DA7DE /* DarkModeBasic.swift */,
 				62F5464B2CB0CCE2000DA7DE /* OnAppearBasic.swift */,
 				62F5464D2CB0CEC0000DA7DE /* OnTabGestureBasic.swift */,
+				62F5464F2CB0D0CA000DA7DE /* README.md */,
 				6294B93C2C8D851600E6CE50 /* AlertBasic.swift */,
 				6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */,
 				6294B93E2C8D933700E6CE50 /* ContextMenuBasic.swift */,
@@ -273,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F546502CB0D0CA000DA7DE /* README.md in Resources */,
 				6262B43A2C5E0A1200D4FDED /* Preview Assets.xcassets in Resources */,
 				6262B4372C5E0A1200D4FDED /* Assets.xcassets in Resources */,
 			);
