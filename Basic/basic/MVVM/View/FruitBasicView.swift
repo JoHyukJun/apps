@@ -16,7 +16,7 @@ struct FruitBasicView: View {
     @StateObject var fruitViewModel = FruitViewModel()
     
     var body: some View {
-        VStack {
+        NavigationView {
             List {
                 if fruitViewModel.isLoading {
                     ProgressView()
@@ -61,14 +61,14 @@ struct SecondFruitScreen: View {
                     Text(fruit.name)
                         .font(.headline)
                         .foregroundColor(.white)
-                    
-                    Button {
-                        presentationMode.wrappedValue.dismiss()
-                    } label: {
-                        Text("back")
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                    }
+                }
+                
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Text("back")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
                 }
             }
         }
