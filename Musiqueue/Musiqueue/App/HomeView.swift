@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    // property
+    @StateObject var artistViewModel: ArtistViewModel = ArtistViewModel()
+    
+    
     var body: some View {
         TabView {
-            ContentView()
+            ContentView(artistVM: artistViewModel)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
