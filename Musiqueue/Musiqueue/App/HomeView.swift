@@ -9,7 +9,31 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ContentView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            
+            VideoView()
+                .tabItem {
+                    Image(systemName: "play.rectangle")
+                    Text("Video")
+                }
+            
+            GalleryView()
+                .tabItem {
+                    Image(systemName: "photo")
+                    Text("Gallery")
+                }
+            
+            AppInfoView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Info")
+                }
+        }
     }
 }
 
