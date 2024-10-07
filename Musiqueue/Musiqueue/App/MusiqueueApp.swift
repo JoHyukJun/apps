@@ -11,7 +11,7 @@ import SwiftUI
 struct MusiqueueApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
