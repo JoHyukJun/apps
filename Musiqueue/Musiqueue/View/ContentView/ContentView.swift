@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    // property
+    @ObservedObject var artistVM: ArtistViewModel
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ForEach(artistVM.artists) { artist in
+                Text(artist.name)
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(artistVM: ArtistViewModel())
 }
