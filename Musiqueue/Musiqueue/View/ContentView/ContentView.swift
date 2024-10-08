@@ -19,7 +19,8 @@ struct ContentView: View {
                 
                 ForEach(artistVM.artists) { artist in
                     NavigationLink {
-                        
+                        // destination
+                        DetailView(artist: artist)
                     } label: {
                         ArtistListView(artist: artist)
                             .listRowInsets(EdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 0))
