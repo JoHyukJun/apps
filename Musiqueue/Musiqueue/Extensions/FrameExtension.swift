@@ -12,33 +12,33 @@ import Foundation
 // Frame Modifier
 
 extension View {
-    // vertical center
+    // Vertical Center
     func vCenter() -> some View {
         self.frame(maxHeight: .infinity, alignment: .center)
     }
     
-    // vertical top
+    // Vertical Top
     func vTop() -> some View {
         self.frame(maxHeight: .infinity, alignment: .top)
     }
     
-    // vertical bottom
+    // Vertical Bottom
     func vBottom() -> some View {
         self.frame(maxHeight: .infinity, alignment: .bottom)
     }
     
-    // horizontal center
+    // Horizontal Center
     func hCenter() -> some View {
         self.frame(maxWidth: .infinity, alignment: .center)
     }
     
-    // horizontal top
-    func hTop() -> some View {
-        self.frame(maxWidth: .infinity, alignment: .top)
+    // Horizontal Leading
+    func hLeading() -> some View {
+        self.frame(maxWidth: .infinity, alignment: .leading)
     }
     
-    // horizontal bottom
-    func hBottom() -> some View {
-        self.frame(maxWidth: .infinity, alignment: .bottom)
+    // Horizontal Trailing
+    func hTrailing() -> some View {
+        self.frame(maxWidth: .infinity, alignment: .trailing)
     }
 }
