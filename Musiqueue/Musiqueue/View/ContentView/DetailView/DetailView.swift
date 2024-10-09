@@ -33,6 +33,12 @@ struct DetailView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(.accentColor)
                     .padding()
+                
+                Group {
+                    DetailHeadView(headingImage: "photo.on.rectangle.angled", headingText: "\(artist.name) Images")
+                    
+                    DetailGalleryView(artist: artist)
+                } // Group
             } // VStack
             .navigationTitle("\(artist.name) details")
         }
