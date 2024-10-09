@@ -11,4 +11,5 @@ import Foundation
 class ArtistViewModel: ObservableObject {
     // property
     @Published var artists: [Artist] = Bundle.main.decode("artists.json")
+    @Published var coverImages: [CoverImage] = Bundle.main.decode("covers.json")
 }
