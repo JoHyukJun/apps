@@ -25,7 +25,7 @@ struct HomeView: View {
                     Text("Video")
                 }
             
-            GalleryView()
+            GalleryView(artistVM: artistViewModel)
                 .tabItem {
                     Image(systemName: "photo")
                     Text("Gallery")

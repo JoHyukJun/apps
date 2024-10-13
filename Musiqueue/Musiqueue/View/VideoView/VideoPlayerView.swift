@@ -13,9 +13,7 @@ struct VideoPlayerView: View {
     
     var body: some View {
         VStack {
-            Text(video.videoid)
             YoutubeView(videoId: video.videoid)
-                .frame(height: 200)
         }
     }
 }
