@@ -11,7 +11,7 @@ import SwiftUI
 struct BasicApp: App {
     var body: some Scene {
         WindowGroup {
-            DeviceViewMain()
+            AsyncImageBasic()
         }
     }
 }
