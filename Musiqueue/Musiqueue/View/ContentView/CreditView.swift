@@ -11,7 +11,8 @@ struct CreditView: View {
     var body: some View {
         VStack {
             Text("""
-    Copyright Unlucky Strike
+    Copyright
+    Unlucky Strike Co., Ltd.
     All right reserved
 """)
             .font(.footnote)
