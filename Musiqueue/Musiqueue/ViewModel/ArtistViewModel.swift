@@ -12,4 +12,5 @@ class ArtistViewModel: ObservableObject {
     // property
     @Published var artists: [Artist] = Bundle.main.decode("artists.json")
     @Published var coverImages: [CoverImage] = Bundle.main.decode("covers.json")
+    @Published var videos: [Video] = Bundle.main.decode("videos.json")
 }
