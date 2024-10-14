@@ -38,6 +38,7 @@
 		628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */; };
 		628F5C222CBCB4A40034CF74 /* BadgeBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */; };
 		628F5C242CBCB67B0034CF74 /* TextMarkdownBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */; };
+		628F5C262CBCB84A0034CF74 /* SymbolVariantBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */; };
 		6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */; };
 		6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */; };
 		6294B93B2C8D7FFA00E6CE50 /* ListBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */; };
@@ -112,6 +113,7 @@
 		628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionBasic.swift; sourceTree = "<group>"; };
 		628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeBasic.swift; path = basic/BadgeBasic.swift; sourceTree = SOURCE_ROOT; };
 		628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextMarkdownBasic.swift; path = basic/TextMarkdownBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SymbolVariantBasic.swift; path = basic/SymbolVariantBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBasic.swift; path = basic/NavigationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewBasic.swift; path = basic/NavigationViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListBasic.swift; path = basic/ListBasic.swift; sourceTree = SOURCE_ROOT; };
@@ -193,6 +195,7 @@
 				628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */,
 				628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */,
 				628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */,
+				628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */,
 				629768242C7B18600043824B /* BindingBasic.swift */,
 				629768192C79F35A0043824B /* ButtonBasic.swift */,
 				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
@@ -390,6 +393,7 @@
 				6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */,
 				629768252C7B18600043824B /* BindingBasic.swift in Sources */,
 				62D2AB622CB247470018FEAB /* UserModelBasicView.swift in Sources */,
+				628F5C262CBCB84A0034CF74 /* SymbolVariantBasic.swift in Sources */,
 				629768202C7AD1570043824B /* ExtractSubViewBasic.swift in Sources */,
 				62D2AB762CB2719E0018FEAB /* AppStorageBasic.swift in Sources */,
 				629768232C7AD1810043824B /* ItemBasic.swift in Sources */,
