@@ -11,7 +11,6 @@ struct HomeView: View {
     // property
     @StateObject var artistViewModel: ArtistViewModel = ArtistViewModel()
     
-    
     var body: some View {
         TabView {
             ContentView(artistVM: artistViewModel)
@@ -20,13 +19,13 @@ struct HomeView: View {
                     Text("Home")
                 }
             
-            VideoView()
+            VideoView(artistVM: artistViewModel)
                 .tabItem {
                     Image(systemName: "play.rectangle")
                     Text("Video")
                 }
             
-            GalleryView()
+            GalleryView(artistVM: artistViewModel)
                 .tabItem {
                     Image(systemName: "photo")
                     Text("Gallery")

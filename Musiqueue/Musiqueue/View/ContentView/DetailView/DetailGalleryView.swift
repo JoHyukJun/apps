@@ -16,6 +16,10 @@ struct DetailGalleryView: View {
             HStack(alignment: .center, spacing: 15) {
                 ForEach(artist.gallery, id: \.self) { item in
                     Image(item)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                        .cornerRadius(12)
                 }
             }
         } // ScrollView
