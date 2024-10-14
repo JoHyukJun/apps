@@ -42,6 +42,7 @@
 		628F5C282CBCB97D0034CF74 /* ChartsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */; };
 		628F5C2A2CBCDB4E0034CF74 /* CustomSheetBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */; };
 		628F5C2C2CBCEFED0034CF74 /* ShareLinkBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */; };
+		628F5C2E2CBCF1740034CF74 /* GridRowBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */; };
 		6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */; };
 		6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */; };
 		6294B93B2C8D7FFA00E6CE50 /* ListBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */; };
@@ -120,6 +121,7 @@
 		628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChartsBasic.swift; path = basic/ChartsBasic.swift; sourceTree = SOURCE_ROOT; };
 		628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetBasic.swift; sourceTree = "<group>"; };
 		628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShareLinkBasic.swift; path = basic/ShareLinkBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GridRowBasic.swift; path = basic/GridRowBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBasic.swift; path = basic/NavigationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewBasic.swift; path = basic/NavigationViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListBasic.swift; path = basic/ListBasic.swift; sourceTree = SOURCE_ROOT; };
@@ -205,6 +207,7 @@
 				628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */,
 				628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */,
 				628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */,
+				628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */,
 				629768242C7B18600043824B /* BindingBasic.swift */,
 				629768192C79F35A0043824B /* ButtonBasic.swift */,
 				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
@@ -415,6 +418,7 @@
 				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
 				62D2AB642CB24A450018FEAB /* Documentation.docc in Sources */,
 				6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */,
+				628F5C2E2CBCF1740034CF74 /* GridRowBasic.swift in Sources */,
 				628F5C242CBCB67B0034CF74 /* TextMarkdownBasic.swift in Sources */,
 				628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */,
 				62F5464C2CB0CCE2000DA7DE /* OnAppearBasic.swift in Sources */,
