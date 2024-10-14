@@ -35,6 +35,19 @@
 		628F5C192CBBDF820034CF74 /* BackgroundMaterialsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */; };
 		628F5C1C2CBBE1FB0034CF74 /* TextSelectionBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */; };
 		628F5C1E2CBBE25C0034CF74 /* ButtonStyleBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */; };
+		628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */; };
+		628F5C222CBCB4A40034CF74 /* BadgeBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */; };
+		628F5C242CBCB67B0034CF74 /* TextMarkdownBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */; };
+		628F5C262CBCB84A0034CF74 /* SymbolVariantBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */; };
+		628F5C282CBCB97D0034CF74 /* ChartsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */; };
+		628F5C2A2CBCDB4E0034CF74 /* CustomSheetBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */; };
+		628F5C2C2CBCEFED0034CF74 /* ShareLinkBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */; };
+		628F5C2E2CBCF1740034CF74 /* GridRowBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */; };
+		628F5C302CBD15540034CF74 /* NavigationStackBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C2F2CBD15540034CF74 /* NavigationStackBasic.swift */; };
+		628F5C322CBD1B170034CF74 /* GaugeViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */; };
+		628F5C342CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */; };
+		628F5C362CBD1EBF0034CF74 /* ViewThatFitsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */; };
+		628F5C382CBD4A3F0034CF74 /* LabeledContentBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */; };
 		6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */; };
 		6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */; };
 		6294B93B2C8D7FFA00E6CE50 /* ListBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */; };
@@ -106,6 +119,19 @@
 		628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterialsBasic.swift; sourceTree = "<group>"; };
 		628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionBasic.swift; sourceTree = "<group>"; };
 		628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonStyleBasic.swift; path = basic/ButtonStyleBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionBasic.swift; sourceTree = "<group>"; };
+		628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BadgeBasic.swift; path = basic/BadgeBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextMarkdownBasic.swift; path = basic/TextMarkdownBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SymbolVariantBasic.swift; path = basic/SymbolVariantBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChartsBasic.swift; path = basic/ChartsBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetBasic.swift; sourceTree = "<group>"; };
+		628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShareLinkBasic.swift; path = basic/ShareLinkBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GridRowBasic.swift; path = basic/GridRowBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C2F2CBD15540034CF74 /* NavigationStackBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationStackBasic.swift; path = basic/NavigationStackBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeViewBasic.swift; sourceTree = "<group>"; };
+		628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabGestureWithLocationBasic.swift; path = basic/TabGestureWithLocationBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsBasic.swift; sourceTree = "<group>"; };
+		628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LabeledContentBasic.swift; path = basic/LabeledContentBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBasic.swift; path = basic/NavigationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewBasic.swift; path = basic/NavigationViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListBasic.swift; path = basic/ListBasic.swift; sourceTree = SOURCE_ROOT; };
@@ -176,62 +202,75 @@
 		6262B4312C5E0A1100D4FDED /* Basic */ = {
 			isa = PBXGroup;
 			children = (
-				628F5C1A2CBBE04F0034CF74 /* App */,
-				6262B4412C5E0A4E00D4FDED /* TextBasic.swift */,
-				6262E3852C5F3A9700855C54 /* ShapeBasic.swift */,
+				62D2AB632CB24A450018FEAB /* Documentation.docc */,
+				6262B43B2C5E0A1200D4FDED /* Basic.entitlements */,
+				6282665D2C9EBDEE0004A051 /* ActionSheetBasic.swift */,
+				6294B93C2C8D851600E6CE50 /* AlertBasic.swift */,
+				620A1D9A2C7F30A70056CCE2 /* AnimationBasic.swift */,
+				62D2AB752CB2719E0018FEAB /* AppStorageBasic.swift */,
+				628F5C162CBBB9B60034CF74 /* AsyncImageBasic.swift */,
+				6262E3912C5F906D00855C54 /* BackgroundBasic.swift */,
+				628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */,
+				628F5C212CBCB4A40034CF74 /* BadgeBasic.swift */,
+				628F5C232CBCB67B0034CF74 /* TextMarkdownBasic.swift */,
+				628F5C252CBCB84A0034CF74 /* SymbolVariantBasic.swift */,
+				628F5C272CBCB97D0034CF74 /* ChartsBasic.swift */,
+				628F5C292CBCDB4E0034CF74 /* CustomSheetBasic.swift */,
+				628F5C2B2CBCEFED0034CF74 /* ShareLinkBasic.swift */,
+				628F5C2D2CBCF1740034CF74 /* GridRowBasic.swift */,
+				628F5C2F2CBD15540034CF74 /* NavigationStackBasic.swift */,
+				628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */,
+				628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */,
+				628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */,
+				628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */,
+				629768242C7B18600043824B /* BindingBasic.swift */,
+				629768192C79F35A0043824B /* ButtonBasic.swift */,
+				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
+				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
+				62E72F7E2CAE87D10010C4EA /* ColorPickerBasic.swift */,
+				6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */,
+				6262B4342C5E0A1100D4FDED /* ContentView.swift */,
+				6294B93E2C8D933700E6CE50 /* ContextMenuBasic.swift */,
+				62F546492CB0CAE8000DA7DE /* DarkModeBasic.swift */,
+				62E72F802CAE88F00010C4EA /* DatePickerBasic.swift */,
+				6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */,
+				6297681D2C7AD0290043824B /* ExtractViewBasic.swift */,
+				629768132C79CD8F0043824B /* ForEachLoopBasic.swift */,
+				6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */,
 				6262E3892C5F555A00855C54 /* GradientBasic.swift */,
 				6262E38B2C5F57C700855C54 /* IconBasic.swift */,
-				6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */,
-				6262E3872C5F3EF800855C54 /* ColorBasic.swift */,
-				629768132C79CD8F0043824B /* ForEachLoopBasic.swift */,
-				6262E3912C5F906D00855C54 /* BackgroundBasic.swift */,
-				629768192C79F35A0043824B /* ButtonBasic.swift */,
 				629768172C79F21A0043824B /* IgnoreSafeAreaBasic.swift */,
+				6262E38D2C5F693400855C54 /* ImageBasic.swift */,
+				6278387F2C6DFFCB00D09F01 /* InitEnumBasic.swift */,
 				629768152C79CEE00043824B /* LazyGridBasic.swift */,
-				6297681B2C7ACE620043824B /* StateBasic.swift */,
-				628F5C162CBBB9B60034CF74 /* AsyncImageBasic.swift */,
-				628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */,
-				628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */,
-				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
-				6297681D2C7AD0290043824B /* ExtractViewBasic.swift */,
-				6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */,
-				6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */,
-				620A1D9A2C7F30A70056CCE2 /* AnimationBasic.swift */,
-				627B7E5C2C844F460050C9A5 /* TransitionBasic.swift */,
+				6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */,
 				6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */,
-				6282665D2C9EBDEE0004A051 /* ActionSheetBasic.swift */,
-				62E72F782CAE603F0010C4EA /* TextFieldBasic.swift */,
-				62E72F7A2CAE63A20010C4EA /* ToggleBasic.swift */,
-				62E72F7C2CAE64710010C4EA /* PickerBasic.swift */,
-				62E72F7E2CAE87D10010C4EA /* ColorPickerBasic.swift */,
-				62E72F802CAE88F00010C4EA /* DatePickerBasic.swift */,
-				62D2AB752CB2719E0018FEAB /* AppStorageBasic.swift */,
-				62E72F822CAEC2A70010C4EA /* StepperBasic.swift */,
-				62E72F842CAED3480010C4EA /* SliderBasic.swift */,
-				62E72F862CAED5520010C4EA /* TabViewBasic.swift */,
-				62F546492CB0CAE8000DA7DE /* DarkModeBasic.swift */,
+				6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */,
 				62F5464B2CB0CCE2000DA7DE /* OnAppearBasic.swift */,
 				62F5464D2CB0CEC0000DA7DE /* OnTabGestureBasic.swift */,
-				62D2AB5B2CB246100018FEAB /* MVVM */,
-				62D2AB632CB24A450018FEAB /* Documentation.docc */,
-				6294B93C2C8D851600E6CE50 /* AlertBasic.swift */,
-				6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */,
-				6294B93E2C8D933700E6CE50 /* ContextMenuBasic.swift */,
-				6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */,
+				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
+				62E72F7C2CAE64710010C4EA /* PickerBasic.swift */,
+				6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */,
+				6262E3852C5F3A9700855C54 /* ShapeBasic.swift */,
 				627B7E5E2C8451FF0050C9A5 /* SheetBasic.swift */,
 				627B7E602C84523B0050C9A5 /* SheetBasic2.swift */,
-				627838772C6DB29000D09F01 /* StackBasic.swift */,
-				629768242C7B18600043824B /* BindingBasic.swift */,
-				6297681F2C7AD1570043824B /* ExtractSubViewBasic.swift */,
-				629768212C7AD1690043824B /* Component */,
-				627838792C6DB6F700D09F01 /* PaddingBasic.swift */,
+				62E72F842CAED3480010C4EA /* SliderBasic.swift */,
 				6278387B2C6DCB9C00D09F01 /* SpacerBasic.swift */,
-				6278387D2C6DCE1C00D09F01 /* ScrollViewBasic.swift */,
-				6262E38D2C5F693400855C54 /* ImageBasic.swift */,
-				6262E38F2C5F6ACF00855C54 /* FrameBasic.swift */,
-				6262B4342C5E0A1100D4FDED /* ContentView.swift */,
+				627838772C6DB29000D09F01 /* StackBasic.swift */,
+				6297681B2C7ACE620043824B /* StateBasic.swift */,
+				62E72F822CAEC2A70010C4EA /* StepperBasic.swift */,
+				628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */,
+				62E72F862CAED5520010C4EA /* TabViewBasic.swift */,
+				6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */,
+				6262B4412C5E0A4E00D4FDED /* TextBasic.swift */,
+				62E72F782CAE603F0010C4EA /* TextFieldBasic.swift */,
+				628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */,
+				62E72F7A2CAE63A20010C4EA /* ToggleBasic.swift */,
+				627B7E5C2C844F460050C9A5 /* TransitionBasic.swift */,
 				6262B4362C5E0A1200D4FDED /* Assets.xcassets */,
-				6262B43B2C5E0A1200D4FDED /* Basic.entitlements */,
+				628F5C1A2CBBE04F0034CF74 /* App */,
+				629768212C7AD1690043824B /* Component */,
+				62D2AB5B2CB246100018FEAB /* MVVM */,
 				6262B4382C5E0A1200D4FDED /* Preview Content */,
 			);
 			path = Basic;
@@ -381,22 +420,32 @@
 				6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */,
 				629768252C7B18600043824B /* BindingBasic.swift in Sources */,
 				62D2AB622CB247470018FEAB /* UserModelBasicView.swift in Sources */,
+				628F5C262CBCB84A0034CF74 /* SymbolVariantBasic.swift in Sources */,
 				629768202C7AD1570043824B /* ExtractSubViewBasic.swift in Sources */,
 				62D2AB762CB2719E0018FEAB /* AppStorageBasic.swift in Sources */,
+				628F5C322CBD1B170034CF74 /* GaugeViewBasic.swift in Sources */,
+				628F5C342CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift in Sources */,
 				629768232C7AD1810043824B /* ItemBasic.swift in Sources */,
 				6262E38A2C5F555A00855C54 /* GradientBasic.swift in Sources */,
+				628F5C2A2CBCDB4E0034CF74 /* CustomSheetBasic.swift in Sources */,
 				627B7E5F2C8451FF0050C9A5 /* SheetBasic.swift in Sources */,
 				627B7E5D2C844F460050C9A5 /* TransitionBasic.swift in Sources */,
 				62D2AB6E2CB2538B0018FEAB /* DeviceViewModel.swift in Sources */,
 				628F5C172CBBB9B60034CF74 /* AsyncImageBasic.swift in Sources */,
 				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
 				62D2AB642CB24A450018FEAB /* Documentation.docc in Sources */,
+				628F5C382CBD4A3F0034CF74 /* LabeledContentBasic.swift in Sources */,
 				6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */,
+				628F5C2E2CBCF1740034CF74 /* GridRowBasic.swift in Sources */,
+				628F5C242CBCB67B0034CF74 /* TextMarkdownBasic.swift in Sources */,
+				628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */,
 				62F5464C2CB0CCE2000DA7DE /* OnAppearBasic.swift in Sources */,
 				62E72F832CAEC2A70010C4EA /* StepperBasic.swift in Sources */,
 				62D2AB682CB24B5D0018FEAB /* FruitViewModel.swift in Sources */,
+				628F5C2C2CBCEFED0034CF74 /* ShareLinkBasic.swift in Sources */,
 				62D2AB6A2CB24D6F0018FEAB /* FruitBasicView.swift in Sources */,
 				62E72F852CAED3480010C4EA /* SliderBasic.swift in Sources */,
+				628F5C302CBD15540034CF74 /* NavigationStackBasic.swift in Sources */,
 				629768272C7B18740043824B /* BindingChild.swift in Sources */,
 				6282665E2C9EBDEE0004A051 /* ActionSheetBasic.swift in Sources */,
 				62E72F812CAE88F00010C4EA /* DatePickerBasic.swift in Sources */,
@@ -416,10 +465,12 @@
 				6262B4352C5E0A1100D4FDED /* ContentView.swift in Sources */,
 				627B7E612C84523B0050C9A5 /* SheetBasic2.swift in Sources */,
 				62D2AB722CB254B30018FEAB /* DeviceViewSub.swift in Sources */,
+				628F5C222CBCB4A40034CF74 /* BadgeBasic.swift in Sources */,
 				6294B93F2C8D933700E6CE50 /* ContextMenuBasic.swift in Sources */,
 				6262E3862C5F3A9700855C54 /* ShapeBasic.swift in Sources */,
 				6212D71E2C7DE68F00B5FF34 /* TernaryBasic.swift in Sources */,
 				628F5C1C2CBBE1FB0034CF74 /* TextSelectionBasic.swift in Sources */,
+				628F5C282CBCB97D0034CF74 /* ChartsBasic.swift in Sources */,
 				629768182C79F21A0043824B /* IgnoreSafeAreaBasic.swift in Sources */,
 				620A1D9B2C7F30A70056CCE2 /* AnimationBasic.swift in Sources */,
 				6262E3882C5F3EF800855C54 /* ColorBasic.swift in Sources */,
@@ -432,6 +483,7 @@
 				6278387A2C6DB6F700D09F01 /* PaddingBasic.swift in Sources */,
 				62E72F7D2CAE64710010C4EA /* PickerBasic.swift in Sources */,
 				6212D71C2C7DE42500B5FF34 /* ConditionalBasic.swift in Sources */,
+				628F5C362CBD1EBF0034CF74 /* ViewThatFitsBasic.swift in Sources */,
 				62D2AB702CB254220018FEAB /* DeviceViewMain.swift in Sources */,
 				6297681C2C7ACE620043824B /* StateBasic.swift in Sources */,
 				62D2AB6C2CB2536B0018FEAB /* DeviceModel.swift in Sources */,

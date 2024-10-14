@@ -96,6 +96,7 @@ struct ButtonStyleBasic: View {
                 .buttonStyle(.borderedProminent)
                 .controlSize(.mini)
             }
+            .padding()
         } // ScrollView
     }
 }
