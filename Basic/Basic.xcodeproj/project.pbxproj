@@ -47,6 +47,7 @@
 		628F5C322CBD1B170034CF74 /* GaugeViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */; };
 		628F5C342CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */; };
 		628F5C362CBD1EBF0034CF74 /* ViewThatFitsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */; };
+		628F5C382CBD4A3F0034CF74 /* LabeledContentBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */; };
 		6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */; };
 		6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */; };
 		6294B93B2C8D7FFA00E6CE50 /* ListBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */; };
@@ -130,6 +131,7 @@
 		628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeViewBasic.swift; sourceTree = "<group>"; };
 		628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabGestureWithLocationBasic.swift; path = basic/TabGestureWithLocationBasic.swift; sourceTree = SOURCE_ROOT; };
 		628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewThatFitsBasic.swift; sourceTree = "<group>"; };
+		628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LabeledContentBasic.swift; path = basic/LabeledContentBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBasic.swift; path = basic/NavigationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewBasic.swift; path = basic/NavigationViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListBasic.swift; path = basic/ListBasic.swift; sourceTree = SOURCE_ROOT; };
@@ -220,6 +222,7 @@
 				628F5C312CBD1B170034CF74 /* GaugeViewBasic.swift */,
 				628F5C332CBD1CA80034CF74 /* TabGestureWithLocationBasic.swift */,
 				628F5C352CBD1EBF0034CF74 /* ViewThatFitsBasic.swift */,
+				628F5C372CBD4A3F0034CF74 /* LabeledContentBasic.swift */,
 				629768242C7B18600043824B /* BindingBasic.swift */,
 				629768192C79F35A0043824B /* ButtonBasic.swift */,
 				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
@@ -431,6 +434,7 @@
 				628F5C172CBBB9B60034CF74 /* AsyncImageBasic.swift in Sources */,
 				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
 				62D2AB642CB24A450018FEAB /* Documentation.docc in Sources */,
+				628F5C382CBD4A3F0034CF74 /* LabeledContentBasic.swift in Sources */,
 				6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */,
 				628F5C2E2CBCF1740034CF74 /* GridRowBasic.swift in Sources */,
 				628F5C242CBCB67B0034CF74 /* TextMarkdownBasic.swift in Sources */,
