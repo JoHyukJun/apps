@@ -35,6 +35,7 @@
 		628F5C192CBBDF820034CF74 /* BackgroundMaterialsBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */; };
 		628F5C1C2CBBE1FB0034CF74 /* TextSelectionBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */; };
 		628F5C1E2CBBE25C0034CF74 /* ButtonStyleBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */; };
+		628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */; };
 		6294B9352C8D7CD200E6CE50 /* NavigationBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */; };
 		6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */; };
 		6294B93B2C8D7FFA00E6CE50 /* ListBasic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */; };
@@ -106,6 +107,7 @@
 		628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterialsBasic.swift; sourceTree = "<group>"; };
 		628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionBasic.swift; sourceTree = "<group>"; };
 		628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ButtonStyleBasic.swift; path = basic/ButtonStyleBasic.swift; sourceTree = SOURCE_ROOT; };
+		628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionBasic.swift; sourceTree = "<group>"; };
 		6294B9342C8D7CD200E6CE50 /* NavigationBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationBasic.swift; path = basic/NavigationBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B9382C8D7D3600E6CE50 /* NavigationViewBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationViewBasic.swift; path = basic/NavigationViewBasic.swift; sourceTree = SOURCE_ROOT; };
 		6294B93A2C8D7FFA00E6CE50 /* ListBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListBasic.swift; path = basic/ListBasic.swift; sourceTree = SOURCE_ROOT; };
@@ -193,6 +195,7 @@
 				628F5C182CBBDF820034CF74 /* BackgroundMaterialsBasic.swift */,
 				628F5C1B2CBBE1FB0034CF74 /* TextSelectionBasic.swift */,
 				628F5C1D2CBBE25C0034CF74 /* ButtonStyleBasic.swift */,
+				628F5C1F2CBCB3470034CF74 /* SwipeActionBasic.swift */,
 				6297681D2C7AD0290043824B /* ExtractViewBasic.swift */,
 				6212D71B2C7DE42500B5FF34 /* ConditionalBasic.swift */,
 				6212D71D2C7DE68F00B5FF34 /* TernaryBasic.swift */,
@@ -392,6 +395,7 @@
 				629768162C79CEE00043824B /* LazyGridBasic.swift in Sources */,
 				62D2AB642CB24A450018FEAB /* Documentation.docc in Sources */,
 				6294B9392C8D7D3600E6CE50 /* NavigationViewBasic.swift in Sources */,
+				628F5C202CBCB3470034CF74 /* SwipeActionBasic.swift in Sources */,
 				62F5464C2CB0CCE2000DA7DE /* OnAppearBasic.swift in Sources */,
 				62E72F832CAEC2A70010C4EA /* StepperBasic.swift in Sources */,
 				62D2AB682CB24B5D0018FEAB /* FruitViewModel.swift in Sources */,
