@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct BasicApp: App {
+    // ASIS ViewModel Enviroment transportation
+    @StateObject private var vm1 = UserObservableObject()
+    
+    // @Observation
+    @State private var vm2 = UserObservableMacro()
+    
     var body: some Scene {
         WindowGroup {
-            AsyncImageBasic()
+            ObservationBasic()
+                .environmentObject(vm1) // ASIS EnviromentObject transportation
+                .environment(vm2) // @Observation
         }
     }
 }
