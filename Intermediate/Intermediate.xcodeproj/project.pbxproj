@@ -6,17 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6275E3E52CD347F70058033A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6275E3DE2CD347F70058033A /* Preview Assets.xcassets */; };
+		6275E3E62CD347F70058033A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6275E3E02CD347F70058033A /* Assets.xcassets */; };
+		6275E3E72CD347F70058033A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3E12CD347F70058033A /* ContentView.swift */; };
+		6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3E32CD347F70058033A /* IntermediateApp.swift */; };
+		6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3EE2CD348910058033A /* IfLetGuardInter.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6275E3CB2CD27BF40058033A /* Intermediate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intermediate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6275E3DE2CD347F70058033A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6275E3E02CD347F70058033A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6275E3E12CD347F70058033A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6275E3E22CD347F70058033A /* Intermediate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Intermediate.entitlements; sourceTree = "<group>"; };
+		6275E3E32CD347F70058033A /* IntermediateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateApp.swift; sourceTree = "<group>"; };
+		6275E3EE2CD348910058033A /* IfLetGuardInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		6275E3CD2CD27BF40058033A /* Intermediate */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Intermediate;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6275E3C82CD27BF40058033A /* Frameworks */ = {
@@ -32,7 +38,7 @@
 		6275E3C22CD27BF30058033A = {
 			isa = PBXGroup;
 			children = (
-				6275E3CD2CD27BF40058033A /* Intermediate */,
+				6275E3E42CD347F70058033A /* Intermediate */,
 				6275E3CC2CD27BF40058033A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,67 @@
 				6275E3CB2CD27BF40058033A /* Intermediate.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6275E3DF2CD347F70058033A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6275E3DE2CD347F70058033A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6275E3E42CD347F70058033A /* Intermediate */ = {
+			isa = PBXGroup;
+			children = (
+				6275E3ED2CD3485C0058033A /* App */,
+				6275E3EC2CD348500058033A /* SwiftUI Grammer */,
+				6275E3EB2CD348420058033A /* SwiftUI Core */,
+				6275E3EA2CD3480A0058033A /* SwiftUI with Core Data */,
+				6275E3E92CD347FA0058033A /* SwiftUI with UIKit */,
+				6275E3DF2CD347F70058033A /* Preview Content */,
+				6275E3E02CD347F70058033A /* Assets.xcassets */,
+				6275E3E22CD347F70058033A /* Intermediate.entitlements */,
+			);
+			path = Intermediate;
+			sourceTree = "<group>";
+		};
+		6275E3E92CD347FA0058033A /* SwiftUI with UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI with UIKit";
+			sourceTree = "<group>";
+		};
+		6275E3EA2CD3480A0058033A /* SwiftUI with Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI with Core Data";
+			sourceTree = "<group>";
+		};
+		6275E3EB2CD348420058033A /* SwiftUI Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI Core";
+			sourceTree = "<group>";
+		};
+		6275E3EC2CD348500058033A /* SwiftUI Grammer */ = {
+			isa = PBXGroup;
+			children = (
+				6275E3EE2CD348910058033A /* IfLetGuardInter.swift */,
+			);
+			path = "SwiftUI Grammer";
+			sourceTree = "<group>";
+		};
+		6275E3ED2CD3485C0058033A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6275E3E12CD347F70058033A /* ContentView.swift */,
+				6275E3E32CD347F70058033A /* IntermediateApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +126,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				6275E3CD2CD27BF40058033A /* Intermediate */,
 			);
 			name = Intermediate;
 			packageProductDependencies = (
@@ -109,6 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6275E3E52CD347F70058033A /* Preview Assets.xcassets in Resources */,
+				6275E3E62CD347F70058033A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
+				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
+				6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
