@@ -68,9 +68,15 @@ class UserViewModel: ObservableObject {
         
         // Map
         // map 은 data 를 변형할때 사용 -> 특정값만 추출
-        mappedArray = dataArray.map({ (user) -> String in
-            return user.name
-        })
+//        mappedArray = dataArray.map({ (user) -> String in
+//            return user.name
+//        })
+        
+//        mappedArray = dataArray.map({ $0.name }).filter({ $0.contains("a") }).sorted(by: { $0 < $1 })
+//        mappedArray = dataArray.compactMap({ (user) -> String? in
+//            return user.name
+//        })
+        mappedArray = dataArray.compactMap({ $0.name })
     }
 }
 
