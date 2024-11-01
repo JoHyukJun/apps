@@ -12,6 +12,7 @@
 		6275E3E72CD347F70058033A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3E12CD347F70058033A /* ContentView.swift */; };
 		6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3E32CD347F70058033A /* IntermediateApp.swift */; };
 		6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3EE2CD348910058033A /* IfLetGuardInter.swift */; };
+		6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F02CD359D00058033A /* FunctionsInter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6275E3E22CD347F70058033A /* Intermediate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Intermediate.entitlements; sourceTree = "<group>"; };
 		6275E3E32CD347F70058033A /* IntermediateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateApp.swift; sourceTree = "<group>"; };
 		6275E3EE2CD348910058033A /* IfLetGuardInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardInter.swift; sourceTree = "<group>"; };
+		6275E3F02CD359D00058033A /* FunctionsInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6275E3EE2CD348910058033A /* IfLetGuardInter.swift */,
+				6275E3F02CD359D00058033A /* FunctionsInter.swift */,
 			);
 			path = "SwiftUI Grammer";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
 				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
+				6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */,
 				6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
