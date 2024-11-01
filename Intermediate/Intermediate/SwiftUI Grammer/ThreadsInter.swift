@@ -13,10 +13,18 @@ class ThreadsViewModel: ObservableObject {
     @Published var dataArray: [String] = []
     
     func fetchData() {
+        // background thread
         DispatchQueue.global().async {
             let newData = self.downloadData()
+            print("check thread: \(Thread.isMainThread)")
+            print("check thread: \(Thread.current)")
             
-            self.dataArray = newData
+            // main thread
+            DispatchQueue.main.async {
+                self.dataArray = newData
+                print("check thread: \(Thread.isMainThread)")
+                print("check thread: \(Thread.current)")
+            }
         }
     }
     

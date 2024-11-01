@@ -14,6 +14,8 @@
 		6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3EE2CD348910058033A /* IfLetGuardInter.swift */; };
 		6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F02CD359D00058033A /* FunctionsInter.swift */; };
 		6275E3F32CD48B750058033A /* ThreadsInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F22CD48B750058033A /* ThreadsInter.swift */; };
+		6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F42CD4A11B0058033A /* Documentation.docc */; };
+		6275E3F72CD4A25F0058033A /* WeakSelfInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6275E3EE2CD348910058033A /* IfLetGuardInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLetGuardInter.swift; sourceTree = "<group>"; };
 		6275E3F02CD359D00058033A /* FunctionsInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsInter.swift; sourceTree = "<group>"; };
 		6275E3F22CD48B750058033A /* ThreadsInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsInter.swift; sourceTree = "<group>"; };
+		6275E3F42CD4A11B0058033A /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; name = Documentation.docc; path = Intermediate/Documentation.docc; sourceTree = SOURCE_ROOT; };
+		6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				6275E3DF2CD347F70058033A /* Preview Content */,
 				6275E3E02CD347F70058033A /* Assets.xcassets */,
 				6275E3E22CD347F70058033A /* Intermediate.entitlements */,
+				6275E3F42CD4A11B0058033A /* Documentation.docc */,
 			);
 			path = Intermediate;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				6275E3EE2CD348910058033A /* IfLetGuardInter.swift */,
 				6275E3F02CD359D00058033A /* FunctionsInter.swift */,
 				6275E3F22CD48B750058033A /* ThreadsInter.swift */,
+				6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */,
 			);
 			path = "SwiftUI Grammer";
 			sourceTree = "<group>";
@@ -192,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6275E3F32CD48B750058033A /* ThreadsInter.swift in Sources */,
+				6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */,
 				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
 				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
+				6275E3F72CD4A25F0058033A /* WeakSelfInter.swift in Sources */,
 				6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */,
 				6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */,
 			);
