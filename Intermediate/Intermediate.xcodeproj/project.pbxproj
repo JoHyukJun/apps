@@ -17,6 +17,7 @@
 		6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F42CD4A11B0058033A /* Documentation.docc */; };
 		6275E3F72CD4A25F0058033A /* WeakSelfInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */; };
 		6275E3F92CD4A6660058033A /* TypealiasInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F82CD4A6660058033A /* TypealiasInter.swift */; };
+		6275E3FB2CD4A7910058033A /* GenericInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3FA2CD4A7910058033A /* GenericInter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6275E3F42CD4A11B0058033A /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; name = Documentation.docc; path = Intermediate/Documentation.docc; sourceTree = SOURCE_ROOT; };
 		6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfInter.swift; sourceTree = "<group>"; };
 		6275E3F82CD4A6660058033A /* TypealiasInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasInter.swift; sourceTree = "<group>"; };
+		6275E3FA2CD4A7910058033A /* GenericInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				6275E3F02CD359D00058033A /* FunctionsInter.swift */,
 				6275E3F22CD48B750058033A /* ThreadsInter.swift */,
 				6275E3F62CD4A25F0058033A /* WeakSelfInter.swift */,
+				6275E3FA2CD4A7910058033A /* GenericInter.swift */,
 				6275E3F82CD4A6660058033A /* TypealiasInter.swift */,
 			);
 			path = "SwiftUI Grammer";
@@ -204,6 +207,7 @@
 				6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */,
 				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
 				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
+				6275E3FB2CD4A7910058033A /* GenericInter.swift in Sources */,
 				6275E3F72CD4A25F0058033A /* WeakSelfInter.swift in Sources */,
 				6275E3F92CD4A6660058033A /* TypealiasInter.swift in Sources */,
 				6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */,
