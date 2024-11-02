@@ -19,6 +19,7 @@
 		6275E3F92CD4A6660058033A /* TypealiasInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3F82CD4A6660058033A /* TypealiasInter.swift */; };
 		6275E3FB2CD4A7910058033A /* GenericInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3FA2CD4A7910058033A /* GenericInter.swift */; };
 		6275E3FD2CD4C5930058033A /* DoTryCatchInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3FC2CD4C5930058033A /* DoTryCatchInter.swift */; };
+		6275E3FF2CD5CEDE0058033A /* ScrollViewReaderInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6275E3FE2CD5CEDE0058033A /* ScrollViewReaderInter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6275E3F82CD4A6660058033A /* TypealiasInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasInter.swift; sourceTree = "<group>"; };
 		6275E3FA2CD4A7910058033A /* GenericInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericInter.swift; sourceTree = "<group>"; };
 		6275E3FC2CD4C5930058033A /* DoTryCatchInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTryCatchInter.swift; sourceTree = "<group>"; };
+		6275E3FE2CD5CEDE0058033A /* ScrollViewReaderInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderInter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		6275E3EB2CD348420058033A /* SwiftUI Core */ = {
 			isa = PBXGroup;
 			children = (
+				6275E3FE2CD5CEDE0058033A /* ScrollViewReaderInter.swift */,
 			);
 			path = "SwiftUI Core";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6275E3FF2CD5CEDE0058033A /* ScrollViewReaderInter.swift in Sources */,
 				6275E3F32CD48B750058033A /* ThreadsInter.swift in Sources */,
 				6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */,
 				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
