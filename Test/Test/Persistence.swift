@@ -1,27 +1,23 @@
 //
 //  Persistence.swift
-//  Intermediate
+//  Test
 //
 //  Created by johyukjun on 11/8/24.
 //
 
-
 import CoreData
 
 struct PersistenceController {
-    // Create instance
     static let shared = PersistenceController()
 
-    // SwiftUI preview 에서 core data 를 보기 위한 변수
-    static var preview: PersistenceController = {
+    @MainActor
+    static let preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        
-        for x in 1..<10 {
-            let newFish = FishEntity(context: viewContext)
-            newFish.name = "Fish \(x)"
+        for _ in 0..<10 {
+            let newItem = Item(context: viewContext)
+            newItem.timestamp = Date()
         }
-        
         do {
             try viewContext.save()
         } catch {
@@ -36,7 +32,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Model")
+        container = NSPersistentContainer(name: "Test")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
