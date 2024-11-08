@@ -1,20 +1,19 @@
 //
-//  IntermediateApp.swift
-//  Intermediate
+//  TestApp.swift
+//  Test
 //
-//  Created by johyukjun on 10/30/24.
+//  Created by johyukjun on 11/8/24.
 //
 
 import SwiftUI
-import CoreData
 
 @main
-struct IntermediateApp: App {
+struct TestApp: App {
     let persistenceController = PersistenceController.shared
-    
+
     var body: some Scene {
         WindowGroup {
-            FetchRequestInter()
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
