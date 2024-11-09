@@ -29,6 +29,8 @@
 		62A606EE2CDDCC820029314C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A606ED2CDDCC820029314C /* Persistence.swift */; };
 		62A606F02CDDF4600029314C /* FetchRequestInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A606EF2CDDF4600029314C /* FetchRequestInter.swift */; };
 		62A607132CDDF6800029314C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A607112CDDF6800029314C /* Model.xcdatamodeld */; };
+		62A607152CDDFD570029314C /* CoreDataInter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A607142CDDFD570029314C /* CoreDataInter.swift */; };
+		62A607182CDDFDAF0029314C /* FishContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A607162CDDFDAF0029314C /* FishContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		62A606ED2CDDCC820029314C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		62A606EF2CDDF4600029314C /* FetchRequestInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestInter.swift; sourceTree = "<group>"; };
 		62A607122CDDF6800029314C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		62A607142CDDFD570029314C /* CoreDataInter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInter.swift; sourceTree = "<group>"; };
+		62A607172CDDFDAF0029314C /* FishContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		6275E3E42CD347F70058033A /* Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				62A606ED2CDDCC820029314C /* Persistence.swift */,
+				62A607112CDDF6800029314C /* Model.xcdatamodeld */,
 				6275E3ED2CD3485C0058033A /* App */,
 				6275E3EC2CD348500058033A /* SwiftUI Grammer */,
 				6275E3EB2CD348420058033A /* SwiftUI Core */,
@@ -111,9 +117,9 @@
 		6275E3EA2CD3480A0058033A /* SwiftUI with Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				62A606ED2CDDCC820029314C /* Persistence.swift */,
-				62A607112CDDF6800029314C /* Model.xcdatamodeld */,
 				62A606EF2CDDF4600029314C /* FetchRequestInter.swift */,
+				62A607162CDDFDAF0029314C /* FishContainer.xcdatamodeld */,
+				62A607142CDDFD570029314C /* CoreDataInter.swift */,
 			);
 			path = "SwiftUI with Core Data";
 			sourceTree = "<group>";
@@ -233,7 +239,9 @@
 				6275E3F52CD4A11B0058033A /* Documentation.docc in Sources */,
 				6275E3E72CD347F70058033A /* ContentView.swift in Sources */,
 				6275E4052CD625CA0058033A /* LocalNotificationInter.swift in Sources */,
+				62A607182CDDFDAF0029314C /* FishContainer.xcdatamodeld in Sources */,
 				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
+				62A607152CDDFD570029314C /* CoreDataInter.swift in Sources */,
 				6275E3FB2CD4A7910058033A /* GenericInter.swift in Sources */,
 				62A607132CDDF6800029314C /* Model.xcdatamodeld in Sources */,
 				62A606EE2CDDCC820029314C /* Persistence.swift in Sources */,
@@ -457,6 +465,16 @@
 			);
 			currentVersion = 62A607122CDDF6800029314C /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		62A607162CDDFDAF0029314C /* FishContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62A607172CDDFDAF0029314C /* FishContainer.xcdatamodel */,
+			);
+			currentVersion = 62A607172CDDFDAF0029314C /* FishContainer.xcdatamodel */;
+			path = FishContainer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
