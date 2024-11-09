@@ -38,4 +38,9 @@ extension Stamp {
         
         return request
     }
+    
+    // blank 상태의 CoreData 추가
+    static func empty(context: NSManagedObjectContext = StampProvider.shared.viewContext) -> Stamp {
+        return Stamp(context: context)
+    }
 }

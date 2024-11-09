@@ -11,31 +11,52 @@ struct MainView: View {
     // CoreData Fetch
     @FetchRequest(fetchRequest: Stamp.all()) private var stamps
     
+    // ViewModel 연결
+    @EnvironmentObject var vm: StampViewModel
+    
+    // Provider Singleton 연결
+    var provider = StampProvider.shared
+    
+    @State var selectedItem: Stamp?
+    @State var stampToEdit: Stamp?
+    
     var body: some View {
         NavigationSplitView {
             ZStack {
-                List {
-                    ForEach(1..<10, id: \.self) { idx in
-                        NavigationLink {
-                            UserDetailView()
-                        } label: {
-                            StampRowView(index: idx)
-                                .swipeActions(edge: .leading) {
-                                    // DELETE ACTION
-                                }
-                                .swipeActions(edge: .trailing) {
-                                    // UPDATE ACTION
-                                }
-                        } // NavigationLink
+                if stamps.isEmpty {
+                    NoUserView()
+                }
+                else {
+                    List {
+                        ForEach(stamps) { stamp in
+                            NavigationLink {
+                                UserDetailView()
+                            } label: {
+                                StampRowView(vm: .init(provider: provider, stamp: stamp))
+                                    .swipeActions(edge: .leading) {
+                                        // DELETE ACTION
+                                    }
+                                    .swipeActions(edge: .trailing) {
+                                        // UPDATE ACTION
+                                    }
+                            } // NavigationLink
+                        } // ForEach
+                        .listRowSeparator(.hidden)
+                        .listRowBackground(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color.accentColor.opacity(0.3))
+                                .padding(.vertical, 5)
+                        )
                     }
                 }
+                
             }
-            .frame(minWidth: 200, maxWidth: .infinity)
+            .frame(minWidth: 200)
             .navigationTitle("Coffee Stamp")
             .toolbar {
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        
+                        stampToEdit = .empty(context: provider.newContext)
                     } label: {
                         Image(systemName: "plus")
                             .symbolVariant(.circle)
@@ -58,6 +79,13 @@ struct MainView: View {
                         Image(systemName: "arrow.up")
                             .symbolVariant(.circle)
                     }
+                }
+            }
+            .sheet(item: $stampToEdit) {
+                stampToEdit = nil
+            } content: { stamp in
+                NavigationStack {
+                    CreateUserView(vm: .init(provider: provider, stamp: stamp))                    
                 }
             }
         } detail: {

@@ -78,7 +78,7 @@ struct UserDetailView: View {
                     }
                 }
                 else {
-                    VStack {
+                    VStack(spacing: 10) {
                         HStack {
                             ForEach(1..<8, id: \.self) { idx in
                                 Image(systemName: "cup.and.saucer")
@@ -100,10 +100,17 @@ struct UserDetailView: View {
                             .onTapGesture {
                                 // COUNT TOTAL FREE COFFEE ACTION
                             }
-                    }
+                    } // VStack
                 }
+            } // Section
+            
+            Section("Notes") {
+                Text("Test Notes")
             }
-        }
+        } // List
+        .scrollContentBackground(.hidden)
+        .background(Color.accentColor.opacity(0.2))
+        .navigationTitle("Test Name")
     }
 }
 

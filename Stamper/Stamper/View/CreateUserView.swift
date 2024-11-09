@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct CreateUserView: View {
-    @State var testText: String = "Test"
-    @State var testBool: Bool = false
+    @Environment(\.dismiss) private var dismiss
+    
+    // ViewModel
+    @ObservedObject var vm: StampViewModel
     
     var body: some View {
         List {
             Section {
-                TextField("Name*", text: $testText)
+                TextField("Name*", text: $vm.stamp.name)
                 
-                TextField("Company*", text: $testText)
+                TextField("Company*", text: $vm.stamp.company)
                 
-                Toggle("Favorite", isOn: $testBool)
+                Toggle("Favorite", isOn: $vm.stamp.isFav)
             } header: {
                 Text("GENERAL")
             } footer: {
@@ -26,24 +28,27 @@ struct CreateUserView: View {
             }
             
             Section("Note") {
-                TextField("", text: $testText, axis: .vertical)
+                TextField("", text: $vm.stamp.notes, axis: .vertical)
             }
         } // List
+        .frame(height: 400)
         .scrollContentBackground(.hidden)
         .background(Color.accentColor.opacity(0.3))
         .navigationTitle("New User")
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button {
-                    
+                    validate()
+                    dismiss()
                 } label: {
                     Text("Done")
                 }
+                .disabled(!vm.stamp.isValid)
             }
             
             ToolbarItem(placement: .automatic) {
                 Button {
-                    
+                    dismiss()
                 } label: {
                     Text("Cancle")
                 }
@@ -52,6 +57,15 @@ struct CreateUserView: View {
     }
 }
 
-#Preview {
-    CreateUserView()
+
+extension CreateUserView {
+    func validate() {
+        if vm.stamp.isValid {
+            do {
+                try vm.viewModelSave()
+            } catch {
+                print("No Stamp Data")
+            }
+        }
+    }
 }
