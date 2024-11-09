@@ -6,17 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		62E6B5252CDEF56300DFA427 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E6B51E2CDEF56300DFA427 /* Preview Assets.xcassets */; };
+		62E6B5262CDEF56300DFA427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62E6B5202CDEF56300DFA427 /* Assets.xcassets */; };
+		62E6B5282CDEF56300DFA427 /* StamperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5232CDEF56300DFA427 /* StamperApp.swift */; };
+		62E6B52E2CDEF58900DFA427 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B52D2CDEF58900DFA427 /* MainView.swift */; };
+		62E6B5312CDEF5B600DFA427 /* StampDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B52F2CDEF5B600DFA427 /* StampDataModel.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		62E6B50C2CDE44B100DFA427 /* Stamper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stamper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E6B51E2CDEF56300DFA427 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62E6B5202CDEF56300DFA427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62E6B5222CDEF56300DFA427 /* Stamper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stamper.entitlements; sourceTree = "<group>"; };
+		62E6B5232CDEF56300DFA427 /* StamperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StamperApp.swift; sourceTree = "<group>"; };
+		62E6B52D2CDEF58900DFA427 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		62E6B5302CDEF5B600DFA427 /* StampDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StampDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		62E6B50E2CDE44B100DFA427 /* Stamper */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Stamper;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		62E6B5092CDE44B100DFA427 /* Frameworks */ = {
@@ -32,7 +38,7 @@
 		62E6B5032CDE44B100DFA427 = {
 			isa = PBXGroup;
 			children = (
-				62E6B50E2CDE44B100DFA427 /* Stamper */,
+				62E6B5242CDEF56300DFA427 /* Stamper */,
 				62E6B50D2CDE44B100DFA427 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,59 @@
 				62E6B50C2CDE44B100DFA427 /* Stamper.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		62E6B51F2CDEF56300DFA427 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62E6B51E2CDEF56300DFA427 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62E6B5242CDEF56300DFA427 /* Stamper */ = {
+			isa = PBXGroup;
+			children = (
+				62E6B52C2CDEF57B00DFA427 /* App */,
+				62E6B52B2CDEF57600DFA427 /* Model */,
+				62E6B52A2CDEF57000DFA427 /* ViewModel */,
+				62E6B5292CDEF56500DFA427 /* View */,
+				62E6B51F2CDEF56300DFA427 /* Preview Content */,
+				62E6B5202CDEF56300DFA427 /* Assets.xcassets */,
+				62E6B5222CDEF56300DFA427 /* Stamper.entitlements */,
+			);
+			path = Stamper;
+			sourceTree = "<group>";
+		};
+		62E6B5292CDEF56500DFA427 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62E6B52D2CDEF58900DFA427 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62E6B52A2CDEF57000DFA427 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62E6B52B2CDEF57600DFA427 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62E6B52C2CDEF57B00DFA427 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				62E6B52F2CDEF5B600DFA427 /* StampDataModel.xcdatamodeld */,
+				62E6B5232CDEF56300DFA427 /* StamperApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +118,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				62E6B50E2CDE44B100DFA427 /* Stamper */,
 			);
 			name = Stamper;
 			packageProductDependencies = (
@@ -109,6 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E6B5252CDEF56300DFA427 /* Preview Assets.xcassets in Resources */,
+				62E6B5262CDEF56300DFA427 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E6B5312CDEF5B600DFA427 /* StampDataModel.xcdatamodeld in Sources */,
+				62E6B52E2CDEF58900DFA427 /* MainView.swift in Sources */,
+				62E6B5282CDEF56300DFA427 /* StamperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		62E6B52F2CDEF5B600DFA427 /* StampDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				62E6B5302CDEF5B600DFA427 /* StampDataModel.xcdatamodel */,
+			);
+			currentVersion = 62E6B5302CDEF5B600DFA427 /* StampDataModel.xcdatamodel */;
+			path = StampDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 62E6B5042CDE44B100DFA427 /* Project object */;
 }
