@@ -15,6 +15,8 @@
 		62E6B5332CDEF6D000DFA427 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5322CDEF6D000DFA427 /* Stamp.swift */; };
 		62E6B5352CDF0B5800DFA427 /* StampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5342CDF0B5800DFA427 /* StampProvider.swift */; };
 		62E6B5372CDF0D0000DFA427 /* StampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5362CDF0D0000DFA427 /* StampViewModel.swift */; };
+		62E6B5392CDF220E00DFA427 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5382CDF220E00DFA427 /* UserDetailView.swift */; };
+		62E6B53B2CDF222100DFA427 /* StampRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B53A2CDF222100DFA427 /* StampRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		62E6B5322CDEF6D000DFA427 /* Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
 		62E6B5342CDF0B5800DFA427 /* StampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampProvider.swift; sourceTree = "<group>"; };
 		62E6B5362CDF0D0000DFA427 /* StampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampViewModel.swift; sourceTree = "<group>"; };
+		62E6B5382CDF220E00DFA427 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		62E6B53A2CDF222100DFA427 /* StampRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				62E6B52D2CDEF58900DFA427 /* MainView.swift */,
+				62E6B53A2CDF222100DFA427 /* StampRowView.swift */,
+				62E6B5382CDF220E00DFA427 /* UserDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +196,8 @@
 				62E6B52E2CDEF58900DFA427 /* MainView.swift in Sources */,
 				62E6B5282CDEF56300DFA427 /* StamperApp.swift in Sources */,
 				62E6B5332CDEF6D000DFA427 /* Stamp.swift in Sources */,
+				62E6B5392CDF220E00DFA427 /* UserDetailView.swift in Sources */,
+				62E6B53B2CDF222100DFA427 /* StampRowView.swift in Sources */,
 				62E6B5372CDF0D0000DFA427 /* StampViewModel.swift in Sources */,
 				62E6B5352CDF0B5800DFA427 /* StampProvider.swift in Sources */,
 			);

@@ -21,7 +21,7 @@ class StampProvider {
     }
     
     private init() {
-        container = NSPersistentContainer(name: "Stamp")
+        container = NSPersistentContainer(name: "StampDataModel")
         
         // ViewContext 변화 될 때 자동으로 기존 데이터에 merge 시켜서 자동 업데이트 시켜줌
 //        container.viewContext.automaticallyMergesChangesFromParent = true
