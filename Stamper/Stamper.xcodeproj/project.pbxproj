@@ -12,6 +12,9 @@
 		62E6B5282CDEF56300DFA427 /* StamperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5232CDEF56300DFA427 /* StamperApp.swift */; };
 		62E6B52E2CDEF58900DFA427 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B52D2CDEF58900DFA427 /* MainView.swift */; };
 		62E6B5312CDEF5B600DFA427 /* StampDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B52F2CDEF5B600DFA427 /* StampDataModel.xcdatamodeld */; };
+		62E6B5332CDEF6D000DFA427 /* Stamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5322CDEF6D000DFA427 /* Stamp.swift */; };
+		62E6B5352CDF0B5800DFA427 /* StampProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5342CDF0B5800DFA427 /* StampProvider.swift */; };
+		62E6B5372CDF0D0000DFA427 /* StampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E6B5362CDF0D0000DFA427 /* StampViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		62E6B5232CDEF56300DFA427 /* StamperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StamperApp.swift; sourceTree = "<group>"; };
 		62E6B52D2CDEF58900DFA427 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		62E6B5302CDEF5B600DFA427 /* StampDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StampDataModel.xcdatamodel; sourceTree = "<group>"; };
+		62E6B5322CDEF6D000DFA427 /* Stamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamp.swift; sourceTree = "<group>"; };
+		62E6B5342CDF0B5800DFA427 /* StampProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampProvider.swift; sourceTree = "<group>"; };
+		62E6B5362CDF0D0000DFA427 /* StampViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		62E6B52A2CDEF57000DFA427 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				62E6B5362CDF0D0000DFA427 /* StampViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -91,6 +98,8 @@
 		62E6B52B2CDEF57600DFA427 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62E6B5322CDEF6D000DFA427 /* Stamp.swift */,
+				62E6B5342CDF0B5800DFA427 /* StampProvider.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +189,9 @@
 				62E6B5312CDEF5B600DFA427 /* StampDataModel.xcdatamodeld in Sources */,
 				62E6B52E2CDEF58900DFA427 /* MainView.swift in Sources */,
 				62E6B5282CDEF56300DFA427 /* StamperApp.swift in Sources */,
+				62E6B5332CDEF6D000DFA427 /* Stamp.swift in Sources */,
+				62E6B5372CDF0D0000DFA427 /* StampViewModel.swift in Sources */,
+				62E6B5352CDF0B5800DFA427 /* StampProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
