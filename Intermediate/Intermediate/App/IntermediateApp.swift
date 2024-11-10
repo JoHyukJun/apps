@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
-import CoreData
+import SwiftData
 
 @main
 struct IntermediateApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
     
     var body: some Scene {
         WindowGroup {
-            CoreDataInter()
+            ToDoMainView()
+            // Model Container 넘김 -> IntroView 에서 SampleModel 에 해당되는 SwiftData 를 넘김
+                .modelContainer(for: ToDoModel.self)
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
