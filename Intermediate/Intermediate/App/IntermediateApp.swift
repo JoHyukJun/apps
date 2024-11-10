@@ -14,9 +14,9 @@ struct IntermediateApp: App {
     
     var body: some Scene {
         WindowGroup {
-            IntroView()
+            ToDoMainView()
             // Model Container 넘김 -> IntroView 에서 SampleModel 에 해당되는 SwiftData 를 넘김
-                .modelContainer(for: SampleModel.self)
+                .modelContainer(for: ToDoModel.self)
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
