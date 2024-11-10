@@ -21,18 +21,13 @@ struct ToDoMainView: View {
         NavigationStack {
             VStack {
                 if tasks.isEmpty {
-                    Spacer()
-                    
-                    Text("Add new job")
-                        .font(.largeTitle)
-                    
-                    Spacer()
+                    ContentUnavailableView("Add New Task", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click Add Button"))
                 }
                 else {
                     List {
                         ForEach(tasks) { task in
                             NavigationLink {
-                                
+                                AddUpdateTaskView(task: task)
                             } label: {
                                 TaskRowView(task: task)
                                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
@@ -69,6 +64,11 @@ struct ToDoMainView: View {
                     }
                 }
             } // toolbar
+            .sheet(isPresented: $isNewTask, content: {
+                NavigationStack {
+                    AddUpdateTaskView()
+                }
+            })
             .navigationTitle("Todo List")
             .alert("Do you want to delete this task?", isPresented: $showAlert) {
                 Button(role: .destructive) {

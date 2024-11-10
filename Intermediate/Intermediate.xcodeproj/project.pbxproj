@@ -38,6 +38,7 @@
 		62F70CA72CE09E1700248D39 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CA62CE09E1700248D39 /* ToDoModel.swift */; };
 		62F70CA92CE0B31600248D39 /* ToDoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CA82CE0B31600248D39 /* ToDoMainView.swift */; };
 		62F70CAB2CE0B4C600248D39 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CAA2CE0B4C600248D39 /* TaskRowView.swift */; };
+		62F70CAD2CE0C47D00248D39 /* AddUpdateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CAC2CE0C47D00248D39 /* AddUpdateTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		62F70CA62CE09E1700248D39 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		62F70CA82CE0B31600248D39 /* ToDoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoMainView.swift; sourceTree = "<group>"; };
 		62F70CAA2CE0B4C600248D39 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		62F70CAC2CE0C47D00248D39 /* AddUpdateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				62F70CA02CE0979A00248D39 /* IntroView.swift */,
 				62F70CA82CE0B31600248D39 /* ToDoMainView.swift */,
+				62F70CAC2CE0C47D00248D39 /* AddUpdateTaskView.swift */,
 				62F70CAA2CE0B4C600248D39 /* TaskRowView.swift */,
 				62F70CA42CE09CDA00248D39 /* PreviewSwiftDataView.swift */,
 			);
@@ -301,6 +304,7 @@
 				62F70CA12CE0979A00248D39 /* IntroView.swift in Sources */,
 				62F70CA92CE0B31600248D39 /* ToDoMainView.swift in Sources */,
 				6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */,
+				62F70CAD2CE0C47D00248D39 /* AddUpdateTaskView.swift in Sources */,
 				6275E4012CD5D2410058033A /* GeometryReaderInter.swift in Sources */,
 				6275E40B2CD625E70058033A /* MatchedGeometryEffectInter.swift in Sources */,
 				62F70CA52CE09CDA00248D39 /* PreviewSwiftDataView.swift in Sources */,
