@@ -33,8 +33,18 @@ struct MainView: View {
                                 UserDetailView()
                             } label: {
                                 StampRowView(vm: .init(provider: provider, stamp: stamp))
-                                    .swipeActions(edge: .leading) {
+                                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                         // DELETE ACTION
+                                        Button {
+                                            do {
+                                                try provider.delete(stamp: stamp, context: provider.viewContext)
+                                            } catch {
+                                                print("Error: \(error.localizedDescription)")
+                                            }
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                        }
+                                        .tint(.red)
                                     }
                                     .swipeActions(edge: .trailing) {
                                         // UPDATE ACTION
