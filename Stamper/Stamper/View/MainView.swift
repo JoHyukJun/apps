@@ -48,6 +48,12 @@ struct MainView: View {
                                     }
                                     .swipeActions(edge: .trailing) {
                                         // UPDATE ACTION
+                                        Button {
+                                            stampToEdit = stamp
+                                        } label: {
+                                            Label("Edit", systemImage: "pencil")
+                                        }
+                                        .tint(.orange)
                                     }
                             } // NavigationLink
                         } // ForEach
