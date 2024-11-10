@@ -19,6 +19,10 @@ struct MainView: View {
     
     @State var selectedItem: Stamp?
     @State var stampToEdit: Stamp?
+    @State private var isFav: Bool = false
+    @State private var favConfig: FavConfig = .init()
+    @State private var sort: Sort = .asec
+    @State private var isAsec: Bool = false
     
     var body: some View {
         NavigationSplitView {
@@ -30,14 +34,30 @@ struct MainView: View {
                     List {
                         ForEach(stamps) { stamp in
                             NavigationLink {
-                                UserDetailView()
+                                UserDetailView(vm: .init(provider: provider, stamp: stamp))
                             } label: {
                                 StampRowView(vm: .init(provider: provider, stamp: stamp))
-                                    .swipeActions(edge: .leading) {
+                                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
                                         // DELETE ACTION
+                                        Button {
+                                            do {
+                                                try provider.delete(stamp: stamp, context: provider.viewContext)
+                                            } catch {
+                                                print("Error: \(error.localizedDescription)")
+                                            }
+                                        } label: {
+                                            Label("Delete", systemImage: "trash")
+                                        }
+                                        .tint(.red)
                                     }
                                     .swipeActions(edge: .trailing) {
                                         // UPDATE ACTION
+                                        Button {
+                                            stampToEdit = stamp
+                                        } label: {
+                                            Label("Edit", systemImage: "pencil")
+                                        }
+                                        .tint(.orange)
                                     }
                             } // NavigationLink
                         } // ForEach
@@ -65,18 +85,31 @@ struct MainView: View {
                 
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        
+                        if isFav {
+                            favConfig.filter = FavConfig.Filter.all
+                            isFav.toggle()
+                        }
+                        else {
+                            favConfig.filter = FavConfig.Filter.fav
+                            isFav.toggle()
+                        }
                     } label: {
-                        Image(systemName: "star.fill")
-                            .symbolVariant(.circle)
+                        Image(systemName: isFav ? "star.fill" : "star")
                     }
                 }
                 
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        
+                        if isAsec {
+                            sort = Sort.asec
+                            isAsec.toggle()
+                        }
+                        else {
+                            sort = Sort.desc
+                            isAsec.toggle()
+                        }
                     } label: {
-                        Image(systemName: "arrow.up")
+                        Image(systemName: isAsec ? "arrow.up" : "arrow.down")
                             .symbolVariant(.circle)
                     }
                 }
@@ -88,13 +121,15 @@ struct MainView: View {
                     CreateUserView(vm: .init(provider: provider, stamp: stamp))                    
                 }
             }
+            .onChange(of: favConfig) { oldValue, newValue in
+                stamps.nsPredicate = Stamp.favFilter(config: newValue)
+            }
+            .onChange(of: sort) { oldValue, newValue in
+                stamps.nsSortDescriptors = Stamp.sort(order: newValue)
+            }
         } detail: {
             // NavigationLink 를 눌렀을때 View -> value 값을 넘겨줘야기때문에 생략
         }
 
     }
-}
-
-#Preview {
-    MainView()
 }

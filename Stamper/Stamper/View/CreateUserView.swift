@@ -34,7 +34,7 @@ struct CreateUserView: View {
         .frame(height: 400)
         .scrollContentBackground(.hidden)
         .background(Color.accentColor.opacity(0.3))
-        .navigationTitle("New User")
+        .navigationTitle(vm.isNew ? "New User" : "Update User")
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button {

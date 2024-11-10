@@ -50,4 +50,19 @@ class StampProvider {
     func exist(stamp: Stamp, context: NSManagedObjectContext) -> Stamp? {
         try? context.existingObject(with: stamp.objectID) as? Stamp
     }
+    
+    func delete(stamp: Stamp, context: NSManagedObjectContext) throws {
+        // 현재 Stamp 가 있는지 확인
+        if let existingStamp = self.exist(stamp: stamp, context: context) {
+            // 선택된 context 를 CoreData 에서 삭제
+            context.delete(existingStamp)
+            
+            // 삭제 한 다음 저장 -> 비동기 처리를 위해 Task 사용 (background 상태에서 작업할 수 있게 함)
+            Task(priority: .background) {
+                try await context.perform {
+                    try context.save()
+                }
+            }
+        }
+    }
 }
