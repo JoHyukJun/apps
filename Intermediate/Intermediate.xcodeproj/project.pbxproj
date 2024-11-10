@@ -33,6 +33,8 @@
 		62A607182CDDFDAF0029314C /* FishContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A607162CDDFDAF0029314C /* FishContainer.xcdatamodeld */; };
 		62F70C9F2CE0967A00248D39 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70C9E2CE0967A00248D39 /* SampleModel.swift */; };
 		62F70CA12CE0979A00248D39 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CA02CE0979A00248D39 /* IntroView.swift */; };
+		62F70CA32CE09ADD00248D39 /* PreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CA22CE09ADD00248D39 /* PreviewModel.swift */; };
+		62F70CA52CE09CDA00248D39 /* PreviewSwiftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F70CA42CE09CDA00248D39 /* PreviewSwiftDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		62A607172CDDFDAF0029314C /* FishContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishContainer.xcdatamodel; sourceTree = "<group>"; };
 		62F70C9E2CE0967A00248D39 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		62F70CA02CE0979A00248D39 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		62F70CA22CE09ADD00248D39 /* PreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModel.swift; sourceTree = "<group>"; };
+		62F70CA42CE09CDA00248D39 /* PreviewSwiftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSwiftDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				62F70CA02CE0979A00248D39 /* IntroView.swift */,
+				62F70CA42CE09CDA00248D39 /* PreviewSwiftDataView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				62F70C9E2CE0967A00248D39 /* SampleModel.swift */,
+				62F70CA22CE09ADD00248D39 /* PreviewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				62A607182CDDFDAF0029314C /* FishContainer.xcdatamodeld in Sources */,
 				6275E3EF2CD348910058033A /* IfLetGuardInter.swift in Sources */,
 				62A607152CDDFD570029314C /* CoreDataInter.swift in Sources */,
+				62F70CA32CE09ADD00248D39 /* PreviewModel.swift in Sources */,
 				6275E3FB2CD4A7910058033A /* GenericInter.swift in Sources */,
 				62A607132CDDF6800029314C /* Model.xcdatamodeld in Sources */,
 				62A606EE2CDDCC820029314C /* Persistence.swift in Sources */,
@@ -285,6 +292,7 @@
 				6275E3F12CD359D00058033A /* FunctionsInter.swift in Sources */,
 				6275E4012CD5D2410058033A /* GeometryReaderInter.swift in Sources */,
 				6275E40B2CD625E70058033A /* MatchedGeometryEffectInter.swift in Sources */,
+				62F70CA52CE09CDA00248D39 /* PreviewSwiftDataView.swift in Sources */,
 				6275E3E82CD347F70058033A /* IntermediateApp.swift in Sources */,
 				6275E4092CD625DB0058033A /* ViewModifierInter.swift in Sources */,
 				6275E3FD2CD4C5930058033A /* DoTryCatchInter.swift in Sources */,
