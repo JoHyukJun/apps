@@ -19,6 +19,8 @@ struct MainView: View {
     
     @State var selectedItem: Stamp?
     @State var stampToEdit: Stamp?
+    @State private var isFav: Bool = false
+    @State private var favConfig: FavConfig = .init()
     
     var body: some View {
         NavigationSplitView {
@@ -81,10 +83,16 @@ struct MainView: View {
                 
                 ToolbarItem(placement: .automatic) {
                     Button {
-                        
+                        if isFav {
+                            favConfig.filter = FavConfig.Filter.all
+                            isFav.toggle()
+                        }
+                        else {
+                            favConfig.filter = FavConfig.Filter.fav
+                            isFav.toggle()
+                        }
                     } label: {
-                        Image(systemName: "star.fill")
-                            .symbolVariant(.circle)
+                        Image(systemName: isFav ? "star.fill" : "star")
                     }
                 }
                 
@@ -103,6 +111,9 @@ struct MainView: View {
                 NavigationStack {
                     CreateUserView(vm: .init(provider: provider, stamp: stamp))                    
                 }
+            }
+            .onChange(of: favConfig) { oldValue, newValue in
+                stamps.nsPredicate = Stamp.favFilter(config: newValue)
             }
         } detail: {
             // NavigationLink 를 눌렀을때 View -> value 값을 넘겨줘야기때문에 생략

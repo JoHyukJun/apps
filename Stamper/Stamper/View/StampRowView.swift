@@ -20,13 +20,23 @@ struct StampRowView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .overlay(alignment: .topTrailing) {
             Button {
+                vm.stamp.isFav.toggle()
                 
+                save()
             } label: {
                 Image(systemName: "star")
                     .symbolVariant(.fill)
-                    .foregroundStyle(.yellow)
+                    .foregroundStyle(vm.stamp.isFav ? .yellow : .gray.opacity(0.3))
             }
         }
         .padding(.vertical)
+    }
+    
+    func save() {
+        do {
+            try vm.viewModelSave()
+        } catch {
+            print("Error: \(error.localizedDescription)")
+        }
     }
 }
