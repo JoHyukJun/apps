@@ -56,6 +56,10 @@ extension Stamp {
             return NSPredicate(format: "isFav == %@", NSNumber(value: true))
         }
     }
+    
+    static func sort(order: Sort) -> [NSSortDescriptor] {
+        [NSSortDescriptor(keyPath: \Stamp.name, ascending: order == .asec)]
+    }
 }
 
 struct FavConfig: Equatable {
@@ -64,4 +68,8 @@ struct FavConfig: Equatable {
     }
     
     var filter: Filter = .all
+}
+
+enum Sort {
+    case asec, desc
 }
