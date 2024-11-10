@@ -35,6 +35,24 @@ struct ToDoMainView: View {
                                 
                             } label: {
                                 TaskRowView(task: task)
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                        Button {
+                                            // index set
+                                            taskTodoDelete = task
+                                            showAlert = true
+                                        } label: {
+                                            Text("Delete")
+                                        }
+                                        .tint(.red)
+                                    }
+                                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                                        Button {
+                                            task.isCompleted.toggle()
+                                        } label: {
+                                            Image(systemName: task.isCompleted ? "arrow.uturn.backward.circle.fill" : "checkmark.circle.fill")
+                                        }
+                                        .tint(task.isCompleted ? .green : .blue)
+                                    }
                             }
                         }
                     }
@@ -52,6 +70,15 @@ struct ToDoMainView: View {
                 }
             } // toolbar
             .navigationTitle("Todo List")
+            .alert("Do you want to delete this task?", isPresented: $showAlert) {
+                Button(role: .destructive) {
+                    guard let taskTodoDelete = taskTodoDelete else { return }
+                    // SwiftData 는 autosave 기능이 활성화 되어 있어 context 내용이 변경될때 자동으로 저장
+                    modelContext.delete(taskTodoDelete)
+                } label: {
+                    Text("Delete")
+                }
+            }
         } // NavigationStack
     }
 }
