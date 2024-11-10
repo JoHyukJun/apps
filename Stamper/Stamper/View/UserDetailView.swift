@@ -13,31 +13,33 @@ struct UserDetailView: View {
         horizontalSizeClass == .compact
     }
     
+    @ObservedObject var vm: StampViewModel
+    
     var body: some View {
         List {
             Text(isIOS ? "iPhone" : "macOS")
             
             Section("General") {
                 LabeledContent {
-                    Text("Test Name")
+                    Text(vm.stamp.name)
                 } label: {
                     Text("Name")
                 }
 
                 LabeledContent {
-                    Text("Test Company")
+                    Text(vm.stamp.company)
                 } label: {
                     Text("Company")
                 }
                 
                 LabeledContent {
-                    Text("10")
+                    Text("\(vm.stamp.totalFreeCoffee)")
                 } label: {
                     Text("Total Free Coffee")
                 }
             }
             
-            Section("Stamp \(1)/7") {
+            Section("Stamp \(vm.stamp.selectedCoffee)/7") {
                 if isIOS {
                     VStack (spacing: 20) {
                         HStack {
@@ -47,8 +49,11 @@ struct UserDetailView: View {
                                     .frame(width: 50, height: 50)
                                     .onTapGesture {
                                         // SELECTED COFFEE ACTION
+                                        vm.stamp.selectedCoffee = idx
+                                        
+                                        self.save()
                                     }
-                                    .foregroundStyle(Color.accentColor)
+                                    .foregroundStyle(idx <= vm.stamp.selectedCoffee ? Color.accentColor : .gray.opacity(0.3))
                             }
                             .padding(.horizontal, 10)
                         }
@@ -61,8 +66,11 @@ struct UserDetailView: View {
                                     .frame(width: 50, height: 50)
                                     .onTapGesture {
                                         // SELECTED COFFEE ACTION
+                                        vm.stamp.selectedCoffee = idx
+                                        
+                                        self.save()
                                     }
-                                    .foregroundStyle(Color.accentColor)
+                                    .foregroundStyle(idx <= vm.stamp.selectedCoffee ? Color.accentColor : .gray.opacity(0.3))
                             }
                             .padding(.horizontal, 10)
                         }
@@ -74,6 +82,11 @@ struct UserDetailView: View {
                             .foregroundStyle(Color.accentColor)
                             .onTapGesture {
                                 // COUNT TOTAL FREE COFFEE ACTION
+                                vm.stamp.totalFreeCoffee += 1
+                                
+                                vm.stamp.selectedCoffee = 0
+                                
+                                self.save()
                             }
                     }
                 }
@@ -86,8 +99,11 @@ struct UserDetailView: View {
                                     .frame(width: 50, height: 50)
                                     .onTapGesture {
                                         // SELECTED COFFEE ACTION
+                                        vm.stamp.selectedCoffee = idx
+                                        
+                                        self.save()
                                     }
-                                    .foregroundStyle(Color.accentColor)
+                                    .foregroundStyle(idx <= vm.stamp.selectedCoffee ? Color.accentColor : .gray.opacity(0.3))
                             }
                             .padding(.horizontal, 10)
                         }
@@ -99,21 +115,30 @@ struct UserDetailView: View {
                             .foregroundStyle(Color.accentColor)
                             .onTapGesture {
                                 // COUNT TOTAL FREE COFFEE ACTION
+                                vm.stamp.totalFreeCoffee += 1
+                                
+                                vm.stamp.selectedCoffee = 0
+                                
+                                self.save()
                             }
                     } // VStack
                 }
             } // Section
             
             Section("Notes") {
-                Text("Test Notes")
+                Text(vm.stamp.notes)
             }
         } // List
         .scrollContentBackground(.hidden)
         .background(Color.accentColor.opacity(0.2))
-        .navigationTitle("Test Name")
+        .navigationTitle("User Detail")
     }
-}
-
-#Preview {
-    UserDetailView()
+    
+    func save() {
+        do {
+            try vm.viewModelSave()
+        } catch {
+            print("Error saving: \(error)")
+        }
+    }
 }

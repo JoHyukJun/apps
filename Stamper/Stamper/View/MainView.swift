@@ -30,7 +30,7 @@ struct MainView: View {
                     List {
                         ForEach(stamps) { stamp in
                             NavigationLink {
-                                UserDetailView()
+                                UserDetailView(vm: .init(provider: provider, stamp: stamp))
                             } label: {
                                 StampRowView(vm: .init(provider: provider, stamp: stamp))
                                     .swipeActions(edge: .leading, allowsFullSwipe: false) {
@@ -109,8 +109,4 @@ struct MainView: View {
         }
 
     }
-}
-
-#Preview {
-    MainView()
 }
