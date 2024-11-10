@@ -17,6 +17,35 @@ struct ToDoMainView: View {
     @State private var taskTodoDelete: ToDoModel?
     @State private var isNewTask: Bool = false
     
+    @State private var orderAsceding: Bool = true
+    private var sortedTodos: [ToDoModel] {
+        tasks.sorted { todo1, todo2 in
+            orderAsceding ? todo1.taskName < todo2.taskName : todo1.taskName > todo2.taskName
+        }
+    }
+    
+    @State private var filterOn: Bool = false
+    private var filteredTodos: [ToDoModel] {
+        if filterOn {
+            return tasks.filter { todo in
+                todo.important == true
+            }
+        } else {
+            return tasks
+        }
+    }
+    
+    // .forward = ascending / .reverse = descending
+    @State private var sortOrder: SortOrder = SortOrder.forward
+    private var sortedAndFilteredTodos: [ToDoModel] {
+        let sortedTodos = tasks.sorted {
+            sortOrder == .forward ? $0.taskName < $1.taskName : $0.taskName > $1.taskName
+        }
+        
+        return filterOn ? sortedTodos.filter { $0.important } : sortedTodos
+        
+    }
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -25,7 +54,7 @@ struct ToDoMainView: View {
                 }
                 else {
                     List {
-                        ForEach(tasks) { task in
+                        ForEach(sortedAndFilteredTodos) { task in
                             NavigationLink {
                                 AddUpdateTaskView(task: task)
                             } label: {
@@ -61,6 +90,25 @@ struct ToDoMainView: View {
                         isNewTask.toggle()
                     } label: {
                         Image(systemName: "plus.app.fill")
+                    }
+                }
+                
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        sortOrder = sortOrder == .forward ? .reverse : .forward
+                    } label: {
+                        Image(systemName: "arrow.up.arrow.down.circle")
+                            .symbolVariant(orderAsceding ? .fill : .none)
+                    }
+                }
+                
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        filterOn.toggle()
+                    } label: {
+                        Image(systemName: "star")
+                            .symbolVariant(filterOn ? .fill : .none)
+                            .foregroundStyle(filterOn ? .yellow : .gray)
                     }
                 }
             } // toolbar

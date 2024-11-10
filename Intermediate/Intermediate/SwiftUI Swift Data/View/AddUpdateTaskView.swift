@@ -27,7 +27,6 @@ struct AddUpdateTaskView: View {
     @State private var dueDate: Date = Date()
     @State private var hasDueDate: Bool = false
     
-
     var body: some View {
         Form {
             Label {
@@ -57,7 +56,7 @@ struct AddUpdateTaskView: View {
                     Label {
                         Text("Input Due Date")
                     } icon: {
-                        Image(systemName: "calender.badge.checkmark")
+                        Image(systemName: "calendar.badge.plus")
                     }
                 })
                 .padding(.vertical, 10)
