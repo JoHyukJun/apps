@@ -98,7 +98,7 @@ struct ToDoMainView: View {
                         sortOrder = sortOrder == .forward ? .reverse : .forward
                     } label: {
                         Image(systemName: "arrow.up.arrow.down.circle")
-                            .symbolVariant(orderAsceding ? .fill : .none)
+                            .symbolVariant(sortOrder == .forward ? .fill : .none)
                     }
                 }
                 
