@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
+
 
 @main
 struct MenuoteApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra {
+            MainView()
+                .modelContainer(for: MenuoteModel.self)
+        } label: {
+            Image("MenubarIcon")
         }
+        .menuBarExtraStyle(.window)
+
     }
 }

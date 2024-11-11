@@ -12,6 +12,8 @@
 		62D10E572CE1FF76005D90E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E512CE1FF76005D90E8 /* ContentView.swift */; };
 		62D10E582CE1FF76005D90E8 /* MenuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E532CE1FF76005D90E8 /* MenuoteApp.swift */; };
 		62D10E5F2CE1FFB4005D90E8 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E5E2CE1FFB4005D90E8 /* Documentation.docc */; };
+		62D10E612CE2093D005D90E8 /* MenuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E602CE2093D005D90E8 /* MenuoteModel.swift */; };
+		62D10E632CE209B7005D90E8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E622CE209B7005D90E8 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		62D10E522CE1FF76005D90E8 /* Menuote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Menuote.entitlements; sourceTree = "<group>"; };
 		62D10E532CE1FF76005D90E8 /* MenuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuoteApp.swift; sourceTree = "<group>"; };
 		62D10E5E2CE1FFB4005D90E8 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
+		62D10E602CE2093D005D90E8 /* MenuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuoteModel.swift; sourceTree = "<group>"; };
+		62D10E622CE209B7005D90E8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		62D10E5A2CE1FF80005D90E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62D10E622CE209B7005D90E8 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		62D10E5D2CE1FFA1005D90E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62D10E602CE2093D005D90E8 /* MenuoteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +186,8 @@
 				62D10E572CE1FF76005D90E8 /* ContentView.swift in Sources */,
 				62D10E5F2CE1FFB4005D90E8 /* Documentation.docc in Sources */,
 				62D10E582CE1FF76005D90E8 /* MenuoteApp.swift in Sources */,
+				62D10E632CE209B7005D90E8 /* MainView.swift in Sources */,
+				62D10E612CE2093D005D90E8 /* MenuoteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +326,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -345,6 +354,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
