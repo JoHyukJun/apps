@@ -12,22 +12,27 @@ struct MainView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var menuotes: [MenuoteModel]
     
-    @State var memoContent: String = ""
+    @State var memoContentInput: String = ""
     
     var body: some View {
         VStack {
-            TabView {
-                ForEach(menuotes) { menuote in
-                    
+            HStack {
+                ScrollView(.vertical, showsIndicators: true) {
+                    ForEach(1..<10) { menuote in
+                        TextEditor(text: $memoContentInput)
+                            .frame(width: 200, height: 200)
+                            .padding()
+                            .textEditorStyle(.plain)
+                            .onChange(of: memoContentInput) { oldValue, newValue in
+                                print("old" + oldValue)
+                                print("new" + newValue)
+                            }
+                    }
                 }
-            }
-            TextEditor(text: $memoContent)
-                .frame(width: 200, height: 200)
+                .frame(height: 200)
+                .scrollTargetBehavior(.paging)
                 .padding()
+            }
         }
     }
-}
-
-#Preview {
-    MainView()
 }
