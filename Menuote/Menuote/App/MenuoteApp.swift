@@ -19,6 +19,5 @@ struct MenuoteApp: App {
             Image("MenubarIcon")
         }
         .menuBarExtraStyle(.window)
-
     }
 }
