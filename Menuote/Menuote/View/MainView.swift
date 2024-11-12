@@ -15,8 +15,14 @@ struct MainView: View {
     @State var memoContentInput: String = ""
     
     var body: some View {
-        VStack {
-            HStack {
+        NavigationStack {
+            VStack {
+                NavigationLink {
+                    SettingView()
+                } label: {
+                    Image(systemName: "gear")
+                }
+                
                 ScrollView(.vertical, showsIndicators: true) {
                     ForEach(1..<10) { menuote in
                         TextEditor(text: $memoContentInput)
@@ -29,10 +35,19 @@ struct MainView: View {
                             }
                     }
                 }
-                .frame(height: 200)
                 .scrollTargetBehavior(.paging)
                 .padding()
             }
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        // ACTION
+                    } label: {
+                        Image(systemName: "plus.app.fill")
+                    }
+                }
+            } // toolbar
         }
+        .navigationTitle("Menuote")
     }
 }
