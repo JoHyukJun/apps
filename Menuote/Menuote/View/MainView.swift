@@ -12,15 +12,33 @@ struct MainView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var menuotes: [MenuoteModel]
     
+    @State private var orderAscending: Bool = true
+    private var sortedMenuotes: [MenuoteModel] {
+        menuotes.sorted { menuote1, menuote2 in
+            orderAscending ? menuote1.updatedAt < menuote2.updatedAt : menuote1.updatedAt > menuote2.updatedAt
+        }
+    }
+    
     @State var memoContentInput: String = ""
+    
     
     var body: some View {
         NavigationStack {
             VStack {
+//                if (menuotes.isEmpty) {
+//                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
+//                }
+                
                 NavigationLink {
                     SettingView()
                 } label: {
                     Image(systemName: "gear")
+                }
+                
+                List {
+                    ForEach(sortedMenuotes) { menuote in
+                        Text(menuote.title)
+                    }
                 }
                 
                 ScrollView(.vertical, showsIndicators: true) {
@@ -38,6 +56,7 @@ struct MainView: View {
                 .scrollTargetBehavior(.paging)
                 .padding()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
                 ToolbarItem(placement: .automatic) {
                     Button {
