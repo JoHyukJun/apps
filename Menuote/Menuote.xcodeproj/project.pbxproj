@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		622C8EDA2CE3730600E785BA /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C8ED92CE3730600E785BA /* SettingView.swift */; };
+		6249E31A2CE62AFD008FE91D /* NoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6249E3192CE62AFD008FE91D /* NoteRowView.swift */; };
 		62D10E552CE1FF76005D90E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D10E4E2CE1FF76005D90E8 /* Preview Assets.xcassets */; };
 		62D10E562CE1FF76005D90E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D10E502CE1FF76005D90E8 /* Assets.xcassets */; };
 		62D10E572CE1FF76005D90E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E512CE1FF76005D90E8 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		622C8ED92CE3730600E785BA /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6249E3192CE62AFD008FE91D /* NoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowView.swift; sourceTree = "<group>"; };
 		62D10E3C2CE1FF69005D90E8 /* Menuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D10E4E2CE1FF76005D90E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		62D10E502CE1FF76005D90E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				62D10E622CE209B7005D90E8 /* MainView.swift */,
+				6249E3192CE62AFD008FE91D /* NoteRowView.swift */,
 				622C8ED92CE3730600E785BA /* SettingView.swift */,
 			);
 			path = View;
@@ -191,6 +194,7 @@
 				62D10E582CE1FF76005D90E8 /* MenuoteApp.swift in Sources */,
 				622C8EDA2CE3730600E785BA /* SettingView.swift in Sources */,
 				62D10E632CE209B7005D90E8 /* MainView.swift in Sources */,
+				6249E31A2CE62AFD008FE91D /* NoteRowView.swift in Sources */,
 				62D10E612CE2093D005D90E8 /* MenuoteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
