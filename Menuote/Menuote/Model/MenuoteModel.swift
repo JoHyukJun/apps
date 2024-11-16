@@ -15,13 +15,13 @@ class MenuoteModel {
     var content: String
     var createdAt: Date
     var updatedAt: Date
-    var isFined: Bool
+    var isPinned: Bool
     
-    init(title: String, content: String, createdAt: Date, updatedAt: Date, isFined: Bool) {
+    init(title: String, content: String, createdAt: Date, updatedAt: Date, isPinned: Bool) {
         self.title = title
         self.content = content
         self.createdAt = createdAt
         self.updatedAt = updatedAt
-        self.isFined = isFined
+        self.isPinned = isPinned
     }
 }
