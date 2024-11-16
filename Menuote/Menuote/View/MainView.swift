@@ -25,36 +25,34 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
-//                if (menuotes.isEmpty) {
-//                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
-//                }
-                
-                NavigationLink {
-                    SettingView()
-                } label: {
-                    Image(systemName: "gear")
+                HStack {
+                    // MARK: - HEADER NAVIGATIONLINK
+                    NavigationLink {
+                        SettingView()
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        NoteView()
+                    } label: {
+                        Image(systemName: "note.text.badge.plus")
+                    }
                 }
+                .padding()
+                
+                // MARK: - NOTE LIST
+                //                if (menuotes.isEmpty) {
+                //                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
+                //                }
                 
                 List {
                     ForEach(sortedMenuotes) { menuote in
                         Text(menuote.title)
                     }
                 }
-                
-                ScrollView(.vertical, showsIndicators: true) {
-                    ForEach(1..<10) { menuote in
-                        TextEditor(text: $memoContentInput)
-                            .frame(width: 200, height: 200)
-                            .padding()
-                            .textEditorStyle(.plain)
-                            .onChange(of: memoContentInput) { oldValue, newValue in
-                                print("old" + oldValue)
-                                print("new" + newValue)
-                            }
-                    }
-                }
-                .scrollTargetBehavior(.paging)
-                .padding()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
