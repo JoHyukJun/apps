@@ -29,11 +29,23 @@ struct MainView: View {
 //                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
 //                }
                 
-                NavigationLink {
-                    SettingView()
-                } label: {
-                    Image(systemName: "gear")
+                HStack {
+                    NavigationLink {
+                        SettingView()
+                    } label: {
+                        Image(systemName: "gear")
+                    }
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        NoteView()
+                    } label: {
+                        Image(systemName: "note.text.badge.plus")
+                    }
                 }
+                .padding()
+                
                 
                 List {
                     ForEach(sortedMenuotes) { menuote in
