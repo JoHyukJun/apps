@@ -25,20 +25,24 @@ struct NoteView: View {
     @State private var mUpdatedAt: Date = Date()
     @State private var mIsPinned: Bool = false
     
-    @State private var isNew: Bool = false
-    
     var body: some View {
         Form {
             VStack(spacing: 10) {
                 Label {
-                    TextField("Title", text: $mTitle)
+                    TextField("", text: $mTitle)
+                        .textFieldStyle(.plain)
+                        .font(.title2)
                 } icon: {
-                    Image(systemName: "pencil.circle.fill")
+                    Button {
+                        mIsPinned.toggle()
+                    } label: {
+                        Image(systemName: mIsPinned ? "pin.fill" : "pin")
+                    }
                 }
                 
+                
                 TextEditor(text: $mContent)
-                    .frame(width: 200, height: 200)
-                    .padding()
+                    .frame(height: 200)
                     .textEditorStyle(.plain)
                 
                 HStack(spacing: 10) {
@@ -75,8 +79,8 @@ struct NoteView: View {
                     .tint(.red)
                 }
             }
+            .frame(height: 300)
             .frame( maxWidth: .infinity, maxHeight: .infinity)
-            .frame(height: 500)
             .padding()
         }
         .task {

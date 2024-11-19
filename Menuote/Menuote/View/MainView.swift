@@ -44,19 +44,21 @@ struct MainView: View {
                 .padding()
                 
                 // MARK: - NOTE LIST
-                //                if (menuotes.isEmpty) {
-                //                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
-                //                }
-                
-                List {
-                    ForEach(sortedMenuotes) { menuote in
-                        NavigationLink {
-                            NoteView(menuote: menuote)
-                        } label: {
-                            RowView(menuote: menuote)
+                if (menuotes.isEmpty) {
+                    ContentUnavailableView("Add new memo", systemImage: "rectangle.and.pencil.and.ellipsis", description: Text("Click the plus button to add a new memo."))
+                }
+                else {
+                    List {
+                        ForEach(sortedMenuotes) { menuote in
+                            NavigationLink {
+                                NoteView(menuote: menuote)
+                            } label: {
+                                RowView(menuote: menuote)
+                            }
                         }
-                    }
-                } // List
+                    } // List                    
+                }
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // NavigationStack
