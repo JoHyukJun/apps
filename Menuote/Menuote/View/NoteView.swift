@@ -12,7 +12,7 @@ import SwiftData
 struct NoteView: View {
     var menuote: MenuoteModel? = nil
     
-    var newMenuote: Bool {
+    var isNewMenuote: Bool {
         self.menuote == nil ? true : false
     }
     
@@ -26,34 +26,72 @@ struct NoteView: View {
     @State private var mIsPinned: Bool = false
     
     var body: some View {
-        VStack(spacing: 10) {
-            Label {
-                TextField("Input Title", text: $mTitle)
-            } icon: {
-                Image(systemName: "pencil.circle.fill")
-            }
-            
-            TextEditor(text: $mContent)
-                .frame(width: 200, height: 200)
-                .padding()
-                .textEditorStyle(.plain)
-                .onChange(of: mContent) { oldValue, newValue in
-                    if (oldValue != newValue) {
-                        if newMenuote {
+        Form {
+            VStack(spacing: 10) {
+                Label {
+                    TextField("", text: $mTitle)
+                        .textFieldStyle(.plain)
+                        .font(.title2)
+                } icon: {
+                    Button {
+                        mIsPinned.toggle()
+                    } label: {
+                        Image(systemName: mIsPinned ? "pin.fill" : "pin")
+                    }
+                }
+                
+                
+                TextEditor(text: $mContent)
+                    .frame(height: 200)
+                    .textEditorStyle(.plain)
+                
+                HStack(spacing: 10) {
+                    Button {
+                        if isNewMenuote {
                             let newMenuote = MenuoteModel(title: mTitle, content: mContent, createdAt: mCreatedAt, updatedAt: mUpdatedAt, isPinned: mIsPinned)
                             
                             modelContext.insert(newMenuote)
                         }
+                        else {
+                            menuote?.title = mTitle
+                            menuote?.content = mContent
+                            menuote?.updatedAt = mUpdatedAt
+                            menuote?.isPinned = mIsPinned
+                        }
+                        
+                        dismiss()
+                    } label: {
+                        Text(isNewMenuote ? "Create" : "Update")
+                            .frame(maxWidth: .infinity)
                     }
+                    .buttonStyle(.borderedProminent)
+                    .padding(.horizontal)
+                    .disabled(mContent.isEmpty)
+                    
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancle")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding(.horizontal)
+                    .tint(.red)
                 }
-            
+            }
+            .frame(height: 300)
+            .frame( maxWidth: .infinity, maxHeight: .infinity)
+            .padding()
         }
-        .frame( maxWidth: .infinity, maxHeight: .infinity)
-        .frame(height: 500)
-        .padding()
+        .task {
+            if let menuote {
+                mTitle = menuote.title
+                mContent = menuote.content
+                mIsPinned = menuote.isPinned
+            }
+            else {
+                mIsPinned = menuote?.isPinned ?? false
+            }
+        }
     }
-}
-
-#Preview {
-    NoteView()
 }
