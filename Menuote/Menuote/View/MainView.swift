@@ -15,7 +15,7 @@ struct MainView: View {
     @State private var orderAscending: Bool = true
     private var sortedMenuotes: [MenuoteModel] {
         menuotes.sorted { menuote1, menuote2 in
-            orderAscending ? menuote1.updatedAt < menuote2.updatedAt : menuote1.updatedAt > menuote2.updatedAt
+            orderAscending ? menuote1.updatedAt > menuote2.updatedAt : menuote1.updatedAt < menuote2.updatedAt
         }
     }
     
@@ -50,21 +50,16 @@ struct MainView: View {
                 
                 List {
                     ForEach(sortedMenuotes) { menuote in
-                        Text(menuote.title)
+                        NavigationLink {
+                            NoteView(menuote: menuote)
+                        } label {
+                            RowView(menuote: menuote)
+                        }
                     }
-                }
+                } // List
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .toolbar {
-                ToolbarItem(placement: .automatic) {
-                    Button {
-                        // ACTION
-                    } label: {
-                        Image(systemName: "plus.app.fill")
-                    }
-                }
-            } // toolbar
-        }
+        } // NavigationStack
         .navigationTitle("Menuote")
     }
 }

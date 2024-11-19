@@ -16,6 +16,7 @@
 		62D10E5F2CE1FFB4005D90E8 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E5E2CE1FFB4005D90E8 /* Documentation.docc */; };
 		62D10E612CE2093D005D90E8 /* MenuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E602CE2093D005D90E8 /* MenuoteModel.swift */; };
 		62D10E632CE209B7005D90E8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D10E622CE209B7005D90E8 /* MainView.swift */; };
+		62F3C0F62CECADF1002C8D15 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3C0F52CECADF1002C8D15 /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		62D10E5E2CE1FFB4005D90E8 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		62D10E602CE2093D005D90E8 /* MenuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuoteModel.swift; sourceTree = "<group>"; };
 		62D10E622CE209B7005D90E8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		62F3C0F52CECADF1002C8D15 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				62D10E622CE209B7005D90E8 /* MainView.swift */,
 				6249E31B2CE62BCD008FE91D /* NoteView.swift */,
+				62F3C0F52CECADF1002C8D15 /* RowView.swift */,
 				622C8ED92CE3730600E785BA /* SettingView.swift */,
 			);
 			path = View;
@@ -192,6 +195,7 @@
 				62D10E572CE1FF76005D90E8 /* ContentView.swift in Sources */,
 				62D10E5F2CE1FFB4005D90E8 /* Documentation.docc in Sources */,
 				62D10E582CE1FF76005D90E8 /* MenuoteApp.swift in Sources */,
+				62F3C0F62CECADF1002C8D15 /* RowView.swift in Sources */,
 				622C8EDA2CE3730600E785BA /* SettingView.swift in Sources */,
 				62D10E632CE209B7005D90E8 /* MainView.swift in Sources */,
 				6249E31C2CE62BCD008FE91D /* NoteView.swift in Sources */,
