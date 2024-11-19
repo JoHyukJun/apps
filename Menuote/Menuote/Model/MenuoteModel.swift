@@ -25,3 +25,15 @@ class MenuoteModel {
         self.isPinned = isPinned
     }
 }
+
+extension MenuoteModel {
+    func formattedDate() -> String {
+        let updatedAt = updatedAt
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        return dateFormatter.string(from: updatedAt)
+    }
+}
+

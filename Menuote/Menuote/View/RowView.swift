@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct RowView: View {
+    let menuote: MenuoteModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(menuote.title)
+                        
+                    Image(systemName: menuote.isPinned ? "pin.fill" : "")
+                }
+                
+                Text(menuote.formattedDate())
+                    .font(.caption)
+            }
+        }
     }
-}
-
-#Preview {
-    RowView()
 }

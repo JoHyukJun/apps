@@ -52,7 +52,7 @@ struct MainView: View {
                     ForEach(sortedMenuotes) { menuote in
                         NavigationLink {
                             NoteView(menuote: menuote)
-                        } label {
+                        } label: {
                             RowView(menuote: menuote)
                         }
                     }
