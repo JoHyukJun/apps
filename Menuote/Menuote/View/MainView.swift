@@ -15,7 +15,17 @@ struct MainView: View {
     @State private var orderAscending: Bool = true
     private var sortedMenuotes: [MenuoteModel] {
         menuotes.sorted { menuote1, menuote2 in
-            orderAscending ? menuote1.updatedAt > menuote2.updatedAt : menuote1.updatedAt < menuote2.updatedAt
+            if (orderAscending) {
+                if (menuote1.isPinned != menuote2.isPinned) {
+                    return !menuote2.isPinned
+                }
+                
+                return menuote1.updatedAt > menuote2.updatedAt
+                
+            }
+            else {
+                return menuote1.updatedAt < menuote2.updatedAt
+            }
         }
     }
     
