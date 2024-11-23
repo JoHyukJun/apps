@@ -33,6 +33,8 @@ struct MainView: View {
     
     @State var memoContentInput: String = ""
     
+    @AppStorage("appSize") private var appSize: Int = 1
+    
     
     var body: some View {
         NavigationStack {
@@ -40,7 +42,7 @@ struct MainView: View {
                 HStack {
                     // MARK: - HEADER NAVIGATIONLINK
                     NavigationLink {
-                        SettingView()
+                        SettingView(appSize: $appSize)
                     } label: {
                         Image(systemName: "gear")
                     }
@@ -80,11 +82,11 @@ struct MainView: View {
                                     }
                             }
                         }
-                    } // List                    
+                    } // List
                 }
-                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // NavigationStack
-        .navigationTitle("Menuote")    }
+        .navigationTitle("Menuote")
+    }
 }
