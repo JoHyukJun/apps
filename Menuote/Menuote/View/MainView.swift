@@ -12,14 +12,28 @@ struct MainView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var menuotes: [MenuoteModel]
     
+    @State private var showAlert: Bool = false
+    @State private var selectedMenuote: MenuoteModel?
     @State private var orderAscending: Bool = true
     private var sortedMenuotes: [MenuoteModel] {
         menuotes.sorted { menuote1, menuote2 in
-            orderAscending ? menuote1.updatedAt > menuote2.updatedAt : menuote1.updatedAt < menuote2.updatedAt
+            if (orderAscending) {
+                if (menuote1.isPinned != menuote2.isPinned) {
+                    return !menuote2.isPinned
+                }
+                
+                return menuote1.updatedAt > menuote2.updatedAt
+                
+            }
+            else {
+                return menuote1.updatedAt < menuote2.updatedAt
+            }
         }
     }
     
     @State var memoContentInput: String = ""
+    
+    @AppStorage("appSize") private var appSize: Int = 1
     
     
     var body: some View {
@@ -28,7 +42,7 @@ struct MainView: View {
                 HStack {
                     // MARK: - HEADER NAVIGATIONLINK
                     NavigationLink {
-                        SettingView()
+                        SettingView(appSize: $appSize)
                     } label: {
                         Image(systemName: "gear")
                     }
@@ -54,11 +68,22 @@ struct MainView: View {
                                 NoteView(menuote: menuote)
                             } label: {
                                 RowView(menuote: menuote)
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                        Button {
+                                            // index set
+                                            selectedMenuote = menuote
+                                            
+                                            guard let selectedMenuote = selectedMenuote else { return }
+                                            modelContext.delete(selectedMenuote)
+                                        } label: {
+                                            Text("Delete")
+                                        }
+                                        .tint(.red)
+                                    }
                             }
                         }
-                    } // List                    
+                    } // List
                 }
-                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // NavigationStack

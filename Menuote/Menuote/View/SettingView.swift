@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct SettingView: View {
+    @Binding var appSize: Int
+    
     var body: some View {
         VStack {
             Text("SettingView")
         }
         .padding()
     }
-}
-
-#Preview {
-    SettingView()
 }
