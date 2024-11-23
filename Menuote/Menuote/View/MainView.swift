@@ -12,6 +12,8 @@ struct MainView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var menuotes: [MenuoteModel]
     
+    @State private var showAlert: Bool = false
+    @State private var selectedMenuote: MenuoteModel?
     @State private var orderAscending: Bool = true
     private var sortedMenuotes: [MenuoteModel] {
         menuotes.sorted { menuote1, menuote2 in
@@ -64,6 +66,18 @@ struct MainView: View {
                                 NoteView(menuote: menuote)
                             } label: {
                                 RowView(menuote: menuote)
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                        Button {
+                                            // index set
+                                            selectedMenuote = menuote
+                                            
+                                            guard let selectedMenuote = selectedMenuote else { return }
+                                            modelContext.delete(selectedMenuote)
+                                        } label: {
+                                            Text("Delete")
+                                        }
+                                        .tint(.red)
+                                    }
                             }
                         }
                     } // List                    
@@ -72,6 +86,5 @@ struct MainView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // NavigationStack
-        .navigationTitle("Menuote")
-    }
+        .navigationTitle("Menuote")    }
 }
