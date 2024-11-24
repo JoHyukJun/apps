@@ -13,7 +13,7 @@ struct SettingView: View {
     @Binding var appSize: Int
     
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Section {
                 Picker(selection: $appSize) {
                     ForEach(0 ..< typeOfAppSize.count, id: \.self) { idx in
