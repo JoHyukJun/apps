@@ -11,6 +11,37 @@ import SwiftData
 
 struct NoteView: View {
     var menuote: MenuoteModel? = nil
+   
+    @Binding var appSize: Int
+    private var textEditorSize: CGFloat {
+        if (appSize == 0) {
+            return 150
+        }
+        else if (appSize == 1) {
+            return 200
+        }
+        else if (appSize == 2) {
+            return 300
+        }
+        else {
+            return 200
+        }
+    }
+    
+    private var vstackSize: CGFloat {
+        if (appSize == 0) {
+            return 200
+        }
+        else if (appSize == 1) {
+            return 300
+        }
+        else if (appSize == 2) {
+            return 400
+        }
+        else {
+            return 300
+        }
+    }
     
     var isNewMenuote: Bool {
         self.menuote == nil ? true : false
@@ -42,7 +73,7 @@ struct NoteView: View {
                 
                 
                 TextEditor(text: $mContent)
-                    .frame(height: 200)
+                    .frame(height: textEditorSize)
                     .textEditorStyle(.plain)
                 
                 HStack(spacing: 10) {
@@ -79,7 +110,7 @@ struct NoteView: View {
                     .tint(.red)
                 }
             }
-            .frame(height: 300)
+            .frame(height: vstackSize)
             .frame( maxWidth: .infinity, maxHeight: .infinity)
             .padding()
         }

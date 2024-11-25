@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct SettingView: View {
+    let typeOfAppSize: [String] = ["X", "M", "L"]
+    
     @Binding var appSize: Int
     
     var body: some View {
-        VStack {
-            Text("SettingView")
+        VStack(spacing: 10) {
+            Section {
+                Picker(selection: $appSize) {
+                    ForEach(0 ..< typeOfAppSize.count, id: \.self) { idx in
+                        Text(typeOfAppSize[idx])
+                    }
+                } label: {
+                    Text("App Size")
+                }
+            } // Section
+            
+            AppInfoView()
         }
+        .frame(height: 400)
         .padding()
     }
 }

@@ -35,6 +35,20 @@ struct MainView: View {
     
     @AppStorage("appSize") private var appSize: Int = 1
     
+    private var vstackSize: CGFloat {
+        if (appSize == 0) {
+            return 200
+        }
+        else if (appSize == 1) {
+            return 300
+        }
+        else if (appSize == 2) {
+            return 400
+        }
+        else {
+            return 300
+        }
+    }
     
     var body: some View {
         NavigationStack {
@@ -50,7 +64,7 @@ struct MainView: View {
                     Spacer()
                     
                     NavigationLink {
-                        NoteView()
+                        NoteView(appSize: $appSize)
                     } label: {
                         Image(systemName: "note.text.badge.plus")
                     }
@@ -65,7 +79,7 @@ struct MainView: View {
                     List {
                         ForEach(sortedMenuotes) { menuote in
                             NavigationLink {
-                                NoteView(menuote: menuote)
+                                NoteView(menuote: menuote, appSize: $appSize)
                             } label: {
                                 RowView(menuote: menuote)
                                     .swipeActions(edge: .trailing, allowsFullSwipe: true) {
@@ -85,6 +99,7 @@ struct MainView: View {
                     } // List
                 }
             }
+            .frame(height: vstackSize)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         } // NavigationStack
         .navigationTitle("Menuote")

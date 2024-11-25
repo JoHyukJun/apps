@@ -37,3 +37,10 @@ extension MenuoteModel {
     }
 }
 
+struct AppSetting {
+    var appSize: Int
+    
+    init(appSize: Int = 1) {
+        self.appSize = appSize
+    }
+}
